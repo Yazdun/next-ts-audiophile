@@ -9,6 +9,7 @@
 import React from 'react'
 import css from './styles.module.css'
 import cn from 'classnames'
+import { MdNavigateNext } from 'react-icons/md'
 
 interface IProps {
   primary?: boolean
@@ -23,16 +24,17 @@ export const Button: React.FC<IProps> = ({
   transparent,
   children,
 }) => {
+  const variants = cn(
+    css.btn,
+    primary && css.primary,
+    outline && css.outline,
+    transparent && css.transparent,
+  )
+
   return (
-    <button
-      className={cn(
-        css.btn,
-        primary && css.primary,
-        outline && css.outline,
-        transparent && css.transparent,
-      )}
-    >
+    <button className={variants}>
       {children}
+      <MdNavigateNext className={css.icon} />
     </button>
   )
 }

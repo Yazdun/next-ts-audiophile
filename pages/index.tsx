@@ -6,8 +6,7 @@ const Home: NextPage = () => {
     <>
       <SEO />
       <div style={{ padding: 200 }}>
-        <Button outline>see product</Button>
-        <Button>see product</Button>
+        <Button transparent>shop</Button>
       </div>
     </>
   )

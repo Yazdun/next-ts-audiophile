@@ -19,6 +19,27 @@
   border: 2px solid var(--clr-dark-2);
 }
 
+.transparent {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  color: var(--clr-light-4);
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.icon {
+  display: none;
+}
+
+.transparent .icon {
+  display: inline;
+  font-size: 1.1rem;
+  color: var(--clr-primary-1);
+  transition: 0.3s;
+}
+
 @media only screen and (min-width: 768px) {
   .primary:hover {
     background-color: var(--clr-primary-2);
@@ -29,5 +50,15 @@
     background-color: var(--clr-dark-2);
     border: 2px solid var(--clr-dark-2);
     color: white;
+  }
+
+  .transparent:hover {
+    color: var(--clr-primary-1);
+    background-color: transparent;
+    border: none;
+  }
+
+  .transparent:hover .icon {
+    transform: translateX(3px);
   }
 }
