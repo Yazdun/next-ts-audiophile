@@ -1,11 +1,14 @@
 import type { NextPage } from 'next'
-import { SEO } from '@components/index'
+import { Button, SEO } from '@components/index'
 
 const Home: NextPage = () => {
   return (
     <>
       <SEO />
-      <div>AudioPhile</div>
+      <div style={{ padding: 200 }}>
+        <Button outline>see product</Button>
+        <Button>see product</Button>
+      </div>
     </>
   )
 }

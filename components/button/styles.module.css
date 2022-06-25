@@ -1,0 +1,33 @@
+.btn {
+  font-size: var(--fs-100);
+  letter-spacing: 0.063rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  transition: 0.3s;
+}
+
+.primary {
+  background-color: var(--clr-primary-1);
+  border: 2px solid var(--clr-primary-1);
+  color: white;
+}
+
+.outline {
+  background-color: transparent;
+  color: var(--clr-dark-2);
+  border: 2px solid var(--clr-dark-2);
+}
+
+@media only screen and (min-width: 768px) {
+  .primary:hover {
+    background-color: var(--clr-primary-2);
+    border: 2px solid var(--clr-primary-2);
+  }
+
+  .outline:hover {
+    background-color: var(--clr-dark-2);
+    border: 2px solid var(--clr-dark-2);
+    color: white;
+  }
+}

@@ -19,6 +19,7 @@
   --fs-400: 1.125rem; /* 18px */
   --fs-300: 0.938rem; /* 15px */
   --fs-200: 0.875rem; /* 14px */
+  --fs-100: 0.813rem; /* 14px */
 
   /* font-families */
   --ff--sans-serif: 'Manrope', sans-serif;
@@ -48,6 +49,10 @@ input {
   background: transparent;
   border: none;
   outline: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 img,
