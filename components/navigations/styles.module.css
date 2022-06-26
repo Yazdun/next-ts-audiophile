@@ -8,6 +8,7 @@
 
 .link {
   transition: 0.3s;
+  font-size: var(--fs-100);
 }
 
 .link:hover {
