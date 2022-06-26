@@ -4,6 +4,7 @@
   border-radius: 0.5rem;
   position: relative;
   min-height: 6.313rem;
+  max-height: 6.313rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -41,4 +42,10 @@
 .shop svg {
   font-size: 1.4rem;
   color: var(--clr-primary-1);
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 100%;
+  }
 }

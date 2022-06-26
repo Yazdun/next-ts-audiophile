@@ -1,9 +1,13 @@
 .wrapper {
-  background-color: var(--clr-dark-2);
-  border-bottom: 1px solid #979797;
   position: sticky;
   top: 0;
   z-index: var(--zindex-topbar);
+}
+
+.bg {
+  width: 100%;
+  background-color: var(--clr-dark-2);
+  border-bottom: 1px solid #979797;
 }
 
 .nav {
@@ -15,4 +19,5 @@
   color: white;
   padding: var(--p1);
   align-items: center;
+  background-color: inherit;
 }

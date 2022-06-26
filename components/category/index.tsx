@@ -26,7 +26,3 @@ export const Category: React.FC<IProps> = ({ category }) => {
     </Link>
   )
 }
-
-const myLoader = () => {
-  return <div>loading</div>
-}
