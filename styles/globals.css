@@ -29,6 +29,9 @@
 
   /* widths */
   --max-width-1: 69.375rem;
+
+  /* paddings */
+  --p1: 1.438rem;
 }
 
 *,

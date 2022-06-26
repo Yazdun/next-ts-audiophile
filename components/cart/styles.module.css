@@ -1,0 +1,8 @@
+.cta {
+  color: white;
+  font-size: 1.8rem;
+  display: flex;
+  box-shadow: rgb(54, 54, 54) 0px 0px 0px 2px;
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+}

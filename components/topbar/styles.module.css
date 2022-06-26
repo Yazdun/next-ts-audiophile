@@ -1,5 +1,6 @@
 .wrapper {
   background-color: var(--clr-dark-2);
+  border-bottom: 1px solid #979797;
 }
 
 .nav {
@@ -9,4 +10,6 @@
   max-width: var(--max-width-1);
   margin: auto;
   color: white;
+  padding: var(--p1);
+  align-items: center;
 }
