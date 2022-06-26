@@ -1,5 +1,6 @@
 import React from 'react'
+import css from './styles.module.css'
 
 export const Category: React.FC = () => {
-  return <div>Category</div>
+  return <div className={css.card}>Category</div>
 }
