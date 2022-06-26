@@ -1,23 +1,11 @@
 import type { NextPage } from 'next'
-import { Input, SEO } from '@components/index'
-import { useForm, FormProvider } from 'react-hook-form'
-import { money_validation } from '@utils/index'
+import { SEO } from '@components/index'
 const Home: NextPage = () => {
-  const methods = useForm()
-
   return (
     <>
       <SEO />
-      <div style={{ padding: 100, marginTop: 200 }}>
-        <FormProvider {...methods}>
-          <form
-            onSubmit={methods.handleSubmit(data => console.log(data))}
-            noValidate
-          >
-            <Input {...money_validation} />
-            <button>submit</button>
-          </form>
-        </FormProvider>
+      <div>
+        <h1>Homepage</h1>
       </div>
     </>
   )
