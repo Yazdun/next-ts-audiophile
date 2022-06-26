@@ -3,8 +3,8 @@ import css from './styles.module.css'
 import cn from 'classnames'
 import { is_input_valid, find_input_error } from '@utils/index'
 import { useFormContext } from 'react-hook-form'
-import { motion, AnimatePresence } from 'framer-motion'
-import { framer_error } from './framer'
+import { AnimatePresence } from 'framer-motion'
+import { InputError } from '..'
 
 interface IProps {
   name: string
@@ -32,20 +32,17 @@ export const Input: React.FC<IProps> = ({
   const isInvalid: boolean = is_input_valid(inputErrors)
 
   return (
-    <div className={cn(css.container)}>
+    <div className={cn(css.container, isInvalid && css.error)}>
       <div className={css.head}>
         <label htmlFor={id} className={css.label}>
           {label}
         </label>
         <AnimatePresence exitBeforeEnter initial={false}>
           {isInvalid && (
-            <motion.p
-              className={css.error}
-              {...framer_error}
+            <InputError
+              message={inputErrors.error.message}
               key={inputErrors.error.message}
-            >
-              {inputErrors.error.message}
-            </motion.p>
+            />
           )}
         </AnimatePresence>
       </div>
