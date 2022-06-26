@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 export const Hamburger: React.FC = () => {
   const [open, setOpen] = useState(false)
-  const handle = () => setOpen(true)
+
   return (
     <>
       <div className={css.cta}>
