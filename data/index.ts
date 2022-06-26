@@ -1,9 +1,7 @@
 /*-------------------------------------------------------------------
 |  Data
 |
-|  Purpose:  E-COMMERCE PRODUCTS
-|
-|  Returns:  -
+|  Purpose: PROVIDES E-COMMERCE PRODUCTS
 *-------------------------------------------------------------------*/
 
 import {
