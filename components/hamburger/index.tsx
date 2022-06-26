@@ -15,9 +15,9 @@ export const Hamburger: React.FC = () => {
       </div>
       {open && (
         <div className={css.menu}>
-          {categories.map(cat => (
-            <Category />
-          ))}
+            {categories.map(cat => (
+              <Category category={cat} key={cat.title} />
+            ))}
         </div>
       )}
     </>

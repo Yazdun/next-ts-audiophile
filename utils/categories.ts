@@ -1,6 +1,7 @@
 import { shared_assets_desktop } from '@assets/index'
+import { ICategory } from '@models/category'
 
-export const categories = [
+export const categories: ICategory[] = [
   {
     title: 'headphones',
     slug: 'headphones',

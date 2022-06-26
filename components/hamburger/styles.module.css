@@ -6,9 +6,15 @@
 .menu {
   position: fixed;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  top: 5.8rem;
   left: 0;
   right: 0;
-  top: 5.8rem;
-  z-index: -1;
+  bottom: 0;
+  overflow-y: scroll;
   padding: var(--p1);
+  z-index: -1;
+  padding-top: 5rem;
 }

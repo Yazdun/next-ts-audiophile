@@ -1,6 +1,32 @@
 import React from 'react'
 import css from './styles.module.css'
+import { ICategory } from '@models/category'
+import Image from 'next/image'
+import { MdNavigateNext } from 'react-icons/md'
+import Link from 'next/link'
 
-export const Category: React.FC = () => {
-  return <div className={css.card}>Category</div>
+interface IProps {
+  category: ICategory
+}
+
+export const Category: React.FC<IProps> = ({ category }) => {
+  const { image, slug, title } = category
+  return (
+    <Link href={slug}>
+      <a className={css.card}>
+        <div className={css.image}>
+          <Image src={image} alt={title} placeholder="blur" />
+        </div>
+        <p className={css.title}>{title}</p>
+        <div className={css.shop}>
+          shop
+          <MdNavigateNext />
+        </div>
+      </a>
+    </Link>
+  )
+}
+
+const myLoader = () => {
+  return <div>loading</div>
 }

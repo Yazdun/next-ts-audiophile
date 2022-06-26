@@ -1,3 +1,44 @@
 .card {
   color: black;
+  background-color: var(--clr-light-1);
+  border-radius: 0.5rem;
+  position: relative;
+  min-height: 6.313rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2.25rem;
+}
+
+.image {
+  width: 100%;
+  max-width: 8rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -2rem;
+  margin: auto;
+  display: flex;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: var(--fs-300);
+}
+
+.shop {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+  font-size: var(--fs-100);
+  font-weight: 600;
+  color: var(--clr-light-4);
+}
+
+.shop svg {
+  font-size: 1.4rem;
+  color: var(--clr-primary-1);
 }
