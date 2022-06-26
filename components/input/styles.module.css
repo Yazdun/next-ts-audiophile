@@ -20,7 +20,6 @@
 .input:focus {
   border: 1px solid var(--clr-dark-1);
   box-shadow: var(--clr-dark-1) 0px 0px 0px 1px;
-  caret-color: var(--clr-primary-1);
 }
 
 .input::placeholder {

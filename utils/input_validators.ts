@@ -154,7 +154,7 @@ export const country_validation = {
 export const money_validation = {
   name: 'money',
   label: 'e-Money Number',
-  type: 'text',
+  type: 'number',
   id: 'money',
   placeholder: '238521993',
   validation: {
@@ -172,7 +172,7 @@ export const money_validation = {
 export const pin_validation = {
   name: 'pin',
   label: 'e-Money PIN',
-  type: 'text',
+  type: 'number',
   id: 'pin',
   placeholder: '6891',
   validation: {
@@ -183,6 +183,14 @@ export const pin_validation = {
     pattern: {
       value: /^[0-9]*$/,
       message: 'Digits only',
+    },
+    maxLength: {
+      value: 4,
+      message: 'Length exceeded',
+    },
+    minLength: {
+      value: 4,
+      message: 'Too short',
     },
   },
 }

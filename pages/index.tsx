@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { Input, SEO } from '@components/index'
 import { useForm, FormProvider } from 'react-hook-form'
-import { email_validation } from '@utils/index'
+import { money_validation } from '@utils/index'
 const Home: NextPage = () => {
   const methods = useForm()
 
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
             onSubmit={methods.handleSubmit(data => console.log(data))}
             noValidate
           >
-            <Input {...email_validation} />
+            <Input {...money_validation} />
             <button>submit</button>
           </form>
         </FormProvider>
