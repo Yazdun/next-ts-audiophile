@@ -32,6 +32,9 @@
 
   /* paddings */
   --p1: 1.438rem;
+
+  /* z-index */
+  --zindex-topbar: 999;
 }
 
 *,

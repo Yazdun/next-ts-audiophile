@@ -1,13 +1,17 @@
 import React from 'react'
 import { Squash as BurgerButton } from 'hamburger-react'
 import css from './styles.module.css'
+import { useState } from 'react'
 
 export const Hamburger: React.FC = () => {
+  const [open, setOpen] = useState(false)
+  const handle = () => setOpen(true)
   return (
-    <div>
+    <>
       <div className={css.cta}>
-        <BurgerButton size={25} />
+        <BurgerButton size={25} onToggle={() => setOpen(prev => !prev)} />
       </div>
-    </div>
+      {open && <div className={css.menu}>HELLOOOO</div>}
+    </>
   )
 }
