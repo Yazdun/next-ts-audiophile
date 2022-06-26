@@ -26,6 +26,9 @@
 
   /* font-families */
   --ff--sans-serif: 'Manrope', sans-serif;
+
+  /* widths */
+  --max-width-1: 69.375rem;
 }
 
 *,

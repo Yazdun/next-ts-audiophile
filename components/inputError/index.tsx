@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC InputError
+|
+|  Purpose:  SHOWS ERRORS WHERE AN INPUT IS INVALID
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import { motion } from 'framer-motion'
 import { framer_error } from './framer'

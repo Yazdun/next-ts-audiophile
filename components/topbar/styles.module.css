@@ -1,0 +1,12 @@
+.wrapper {
+  background-color: var(--clr-dark-2);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--max-width-1);
+  margin: auto;
+  color: white;
+}

@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Input
+|
+|  Purpose:  CUSTOM INPUT TO USE WITHIN `useForm` LIBRARY
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import css from './styles.module.css'
 import cn from 'classnames'
