@@ -17,7 +17,7 @@
   max-width: var(--max-width-1);
   margin: auto;
   color: white;
-  padding: var(--p1);
+  padding: 1rem var(--p1);
   align-items: center;
   background-color: inherit;
 }

@@ -3,10 +3,14 @@
   border-radius: 0.2rem;
 }
 
+.cta:focus-visible {
+  box-shadow: var(--clr-primary-1) 0px 0px 0px 2px;
+}
+
 .wrapper {
   position: fixed;
   background-color: white;
-  top: 5.5rem;
+  top: 4rem;
   left: 0;
   right: 0;
   bottom: 0;

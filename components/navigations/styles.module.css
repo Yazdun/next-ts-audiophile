@@ -2,12 +2,12 @@
   display: flex;
   gap: 2.125rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.125rem;
 }
 
 .link {
-  transition: 0.3s;
+  transition: 0.3s color;
   font-size: var(--fs-100);
 }
 

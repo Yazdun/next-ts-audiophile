@@ -32,7 +32,8 @@ export const Hamburger: React.FC = () => {
         <BurgerButton
           size={25}
           toggled={open}
-          onToggle={() => setOpen(prev => !prev)}
+          toggle={setOpen}
+          hideOutline={false}
         />
       </div>
       <AnimatePresence>
