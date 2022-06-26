@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Squash as BurgerButton } from 'hamburger-react'
 import css from './styles.module.css'
 import { useState } from 'react'
@@ -25,10 +25,12 @@ export const Hamburger: React.FC = () => {
       </div>
       <AnimatePresence>
         {open && (
-          <motion.div className={css.menu} key="menu" {...animations}>
-            {categories.map(cat => (
-              <Category category={cat} key={cat.title} />
-            ))}
+          <motion.div className={css.wrapper} {...animations}>
+            <div className={css.items}>
+              {categories.map(cat => (
+                <Category category={cat} key={cat.title} />
+              ))}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

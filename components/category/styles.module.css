@@ -37,6 +37,7 @@
   font-size: var(--fs-100);
   font-weight: 600;
   color: var(--clr-light-4);
+  transition: 0.3s;
 }
 
 .shop svg {
@@ -47,5 +48,9 @@
 @media only screen and (min-width: 768px) {
   .card {
     width: 100%;
+  }
+
+  .card:hover .shop {
+    color: var(--clr-primary-1);
   }
 }

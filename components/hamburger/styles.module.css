@@ -3,25 +3,35 @@
   border-radius: 0.2rem;
 }
 
-.menu {
+.wrapper {
   position: fixed;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+
   top: 5.5rem;
   left: 0;
   right: 0;
   bottom: 0;
   overflow-y: scroll;
-  padding: var(--p1);
   z-index: -1;
   padding-top: 5rem;
 }
 
+.items {
+  width: 100%;
+  max-width: var(--max-width-1);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: var(--p1);
+}
+
 @media only screen and (min-width: 768px) {
-  .menu {
+  .items {
     flex-direction: row;
+  }
+
+  .wrapper {
     bottom: auto;
   }
 }
