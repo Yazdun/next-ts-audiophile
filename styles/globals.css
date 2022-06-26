@@ -8,8 +8,10 @@
   --clr-light-2: #fafafa;
   --clr-light-3: #ffffff;
   --clr-light-4: #7f7f7f;
+  --clr-light-5: #cfcfcf;
   --clr-dark-1: #101010;
   --clr-dark-2: #000000;
+  --clr-danger-1: #cd2c2c;
 
   /* font-sizes */
   --fs-900: 3.5rem; /* 56px */
