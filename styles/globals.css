@@ -75,6 +75,10 @@ picture {
   max-width: 100%;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* remove arrow/spinners from number input*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

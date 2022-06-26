@@ -12,3 +12,4 @@ export {
 export { find_input_error } from '@utils/find_input_error'
 export { is_input_valid } from '@utils/is_input_valid'
 export { categories } from '@utils/categories'
+export { routes } from '@utils/routes'

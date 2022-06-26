@@ -27,7 +27,7 @@ export const Hamburger: React.FC = () => {
   }
 
   return (
-    <div ref={ref}>
+    <div ref={ref} className={css.container}>
       <div className={css.cta}>
         <BurgerButton
           size={25}
