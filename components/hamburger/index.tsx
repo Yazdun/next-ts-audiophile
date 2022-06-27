@@ -2,12 +2,11 @@ import React, { useEffect, useRef } from 'react'
 import { Squash as BurgerButton } from 'hamburger-react'
 import css from './styles.module.css'
 import { useState } from 'react'
-import { categories } from '@utils/index'
-import { Category } from '@components/index'
 import { AnimatePresence, motion } from 'framer-motion'
 import { framer_menu_desktop, framer_menu_mobile } from './framer'
 import { useWindowSize, useIsMounted } from '@hooks/index'
 import { useOnClickOutside } from 'usehooks-ts'
+import { Categories } from '@components/index'
 
 export const Hamburger: React.FC = () => {
   const [open, setOpen] = useState(false)
@@ -39,11 +38,7 @@ export const Hamburger: React.FC = () => {
       <AnimatePresence>
         {open && (
           <motion.div className={css.wrapper} {...animations}>
-            <div className={css.items}>
-              {categories.map(cat => (
-                <Category category={cat} key={cat.title} />
-              ))}
-            </div>
+            <Categories />
           </motion.div>
         )}
       </AnimatePresence>

@@ -1,0 +1,15 @@
+.items {
+  width: 100%;
+  max-width: var(--max-width-1);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: var(--p1);
+}
+
+@media only screen and (min-width: 768px) {
+  .items {
+    flex-direction: row;
+  }
+}

@@ -1,7 +1,7 @@
 export const routes = [
   {
     title: 'home',
-    slug: 'home',
+    slug: '',
   },
   {
     title: 'headphones',
