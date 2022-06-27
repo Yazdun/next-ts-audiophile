@@ -1,6 +1,37 @@
+.wrapper {
+  background-image: url('../../assets/home/mobile/image-header.jpg');
+  min-height: calc(100vh - 81px);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #191919;
+}
+
 .container {
   width: 100%;
   max-width: var(--max-width-1);
   margin: auto;
   padding: var(--p1);
+}
+
+.cover {
+  position: absolute;
+  background-color: black;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  opacity: 0.3;
+}
+
+@media only screen and (min-width: 514px) {
+  .wrapper {
+    background-image: url('../../assets/home/tablet/image-header.jpg');
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .wrapper {
+    background-image: url('../../assets/home/desktop/image-hero.jpg');
+  }
 }
