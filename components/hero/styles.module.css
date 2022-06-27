@@ -1,10 +1,16 @@
 .wrapper {
-  background-image: url('../../assets/home/mobile/image-header.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../../assets/home/mobile/image-header.jpg');
   min-height: calc(100vh - 81px);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #191919;
+  background-color: rgb(25, 25, 25);
+  z-index: 1;
 }
 
 .container {
@@ -14,24 +20,114 @@
   padding: var(--p1);
 }
 
-.cover {
-  position: absolute;
-  background-color: black;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  opacity: 0.3;
+.text {
+  min-height: calc(100vh - 130px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.adv {
+  font-size: var(--fs-200);
+  color: #8b8b8b;
+  letter-spacing: 0.625rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  letter-spacing: 0.081rem;
+  line-height: 3.5rem;
+}
+
+.desc {
+  font-size: var(--fs-300);
+  color: #8b8b8b;
+  line-height: 1.563rem;
+  max-width: 21.813rem;
+}
+
+.img {
+  display: none;
+}
+
+.slice {
+  display: none;
 }
 
 @media only screen and (min-width: 514px) {
   .wrapper {
-    background-image: url('../../assets/home/tablet/image-header.jpg');
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('../../assets/home/tablet/image-header.jpg');
+  }
+
+  .title {
+    font-size: var(--fs-900);
+    line-height: 3.625rem;
+    letter-spacing: 0.125rem;
   }
 }
 
 @media only screen and (min-width: 1040px) {
   .wrapper {
-    background-image: url('../../assets/home/desktop/image-hero.jpg');
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgb(56, 26, 1)
+    );
+    min-height: auto;
+    height: 632px;
+    background-position: center;
+    position: relative;
+  }
+
+  .container {
+    min-height: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .text {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .img {
+    display: block;
+    max-width: 30rem;
+  }
+
+  .slice {
+    position: absolute;
+    display: block;
+    background-color: white;
+    z-index: -1;
+    width: 100%;
+    height: 15rem;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+  }
+}
+
+@media only screen and (max-width: 334px) {
+  .title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }

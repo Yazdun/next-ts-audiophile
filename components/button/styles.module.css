@@ -40,6 +40,11 @@
   transition: 0.3s;
 }
 
+.href {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 @media only screen and (min-width: 768px) {
   .primary:hover {
     background-color: var(--clr-primary-2);
