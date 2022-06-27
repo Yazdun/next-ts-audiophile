@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
-import { SEO, Topbar } from '@components/index'
+import { Hero, Layout, SEO } from '@components/index'
 
 const Home: NextPage = () => {
   return (
     <>
       <SEO />
-      <div>
-        <Topbar />
-      </div>
+      <Layout>
+        <Hero />
+      </Layout>
     </>
   )
 }
