@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Cart
+|
+|  Purpose:  SHOWS USER'S CURRENT CART ITEMS.
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import css from './styles.module.css'

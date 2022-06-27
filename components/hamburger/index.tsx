@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Hamburger
+|
+|  Purpose:  HAMBURGER MENU FOR MOBILE AND TABLET.
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React, { useEffect, useRef } from 'react'
 import { Squash as BurgerButton } from 'hamburger-react'
 import css from './styles.module.css'

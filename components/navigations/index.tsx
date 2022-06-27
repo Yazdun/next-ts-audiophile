@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Navigations
+|
+|  Purpose:  NAVIGATION'S LINKS FOR DESKTOP TOPBAR.
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import { routes } from '@utils/index'
 import Link from 'next/link'
 import React from 'react'

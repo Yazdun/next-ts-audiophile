@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Category
+|
+|  Purpose:  RENDERS A SINGULAR CATEGORY.
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import css from './styles.module.css'
 import { ICategory } from '@models/category'

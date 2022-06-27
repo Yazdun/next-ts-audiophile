@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Topbar
+|
+|  Purpose:  SHARED TOPBAR FOR ALL PAGES.
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import { Hamburger, Cart, Navigations } from '@components/index'
 import css from './styles.module.css'

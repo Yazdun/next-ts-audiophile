@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Categories
+|
+|  Purpose:  RENDERS DIFFERENT TYPES OF CATEGORIES BASED ON GIVEN DATA.
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import { Category } from '@components/index'
 import css from './styles.module.css'
