@@ -21,3 +21,9 @@
   align-items: center;
   background-color: inherit;
 }
+
+@media only screen and (min-width: 1040px) {
+  .bg {
+    border-bottom: none;
+  }
+}

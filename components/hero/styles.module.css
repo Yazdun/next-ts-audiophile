@@ -1,8 +1,8 @@
 .wrapper {
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
     ),
     url('../../assets/home/mobile/image-header.jpg');
   min-height: calc(100vh - 81px);
@@ -64,8 +64,8 @@
   .wrapper {
     background-image: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
       ),
       url('../../assets/home/tablet/image-header.jpg');
   }
@@ -80,9 +80,9 @@
 @media only screen and (min-width: 1040px) {
   .wrapper {
     background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.4),
-      rgb(56, 26, 1)
+      to top,
+      rgb(56, 26, 1),
+      rgba(0, 0, 0, 0.4)
     );
     min-height: auto;
     height: 632px;
@@ -106,6 +106,7 @@
   .img {
     display: block;
     max-width: 30rem;
+    margin-top: 2rem;
   }
 
   .slice {
