@@ -1,5 +1,5 @@
 import React from 'react'
-import { BannerZX7, BannerZX9 } from '@components/index'
+import { BannerZX7, BannerZX9, BannerYX1 } from '@components/index'
 import css from './styles.module.css'
 
 export const Banners: React.FC = () => {
@@ -7,6 +7,7 @@ export const Banners: React.FC = () => {
     <div className={css.banners}>
       <BannerZX9 />
       <BannerZX7 />
+      <BannerYX1 />
     </div>
   )
 }

@@ -1,0 +1,31 @@
+.banner {
+  padding: var(--p1);
+  background-image: url('../../assets/home/mobile/image-speaker-zx7.jpg');
+  background-size: cover;
+  border-radius: var(--border-radius-1);
+  height: 320px;
+  gap: 2.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: var(--fs-600);
+  letter-spacing: 0.125rem;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 550px) {
+  .banner {
+    background-image: url('../../assets/home/tablet/image-speaker-zx7.jpg');
+    padding: 1rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 1041px) {
+  .banner {
+    background-image: url('../../assets/home/desktop/image-speaker-zx7.jpg');
+  }
+}
