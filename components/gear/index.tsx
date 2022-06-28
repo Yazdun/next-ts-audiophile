@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Gear
+|
+|  Purpose:  SHOWS THE BEST GEAR INFO ON ALL PAGES.
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import css from './styles.module.css'
 import { image_best_gear } from '@assets/shared/tablet'

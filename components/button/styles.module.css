@@ -11,6 +11,12 @@
   box-shadow: rgba(221, 149, 82, 0.4) 0px 0px 0px 4px;
 }
 
+.outline:focus-visible,
+.transparent:focus-visible,
+.dark:focus-visible {
+  box-shadow: var(--clr-primary-1) 0px 0px 0px 4px;
+}
+
 .primary {
   background-color: var(--clr-primary-1);
   border: 2px solid var(--clr-primary-1);
