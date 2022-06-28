@@ -7,9 +7,7 @@ const Home: NextPage = () => {
       <SEO />
       <Layout>
         <Hero />
-        <div style={{ marginTop: '10rem' }}>
-          <Categories />
-        </div>
+        <Categories />
       </Layout>
     </>
   )

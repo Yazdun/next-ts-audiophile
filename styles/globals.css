@@ -38,6 +38,9 @@
 
   /* box shadows */
   --bs-1: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  /* gaps */
+  --gap-1: 10.5rem;
 }
 
 *,

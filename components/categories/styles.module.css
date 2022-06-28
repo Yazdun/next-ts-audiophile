@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: var(--p1);
+  padding: 0 var(--p1);
 }
 
 @media only screen and (min-width: 768px) {

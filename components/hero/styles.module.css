@@ -11,6 +11,7 @@
   background-position: center;
   background-color: rgb(25, 25, 25);
   z-index: 1;
+  margin-bottom: var(--gap-1);
 }
 
 .container {
