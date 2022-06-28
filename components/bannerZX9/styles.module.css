@@ -1,0 +1,79 @@
+.banner {
+  width: 100%;
+  max-width: var(--max-width-1);
+  margin: auto;
+  background-color: var(--clr-primary-1);
+  color: white;
+  padding: 3.375rem 1.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.938rem;
+  background-image: url('../../assets/home/desktop/pattern-circles.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.938rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  letter-spacing: 0.081rem;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+}
+
+.desc {
+  line-height: 1.563rem;
+  font-size: var(--fs-300);
+}
+
+.img {
+  max-width: 172px;
+}
+
+@media only screen and (min-width: 768px) {
+  .banner {
+    border-radius: 0.5rem;
+  }
+
+  .img {
+    max-width: 12.313rem;
+  }
+
+  .desc {
+    max-width: 21.813rem;
+  }
+}
+
+@media only screen and (min-width: 1041px) {
+  .banner {
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    background-position: left;
+    height: 560px;
+  }
+
+  .body {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .img {
+    position: absolute;
+    left: 136px;
+    bottom: -1rem;
+    max-width: 25.625rem;
+  }
+}

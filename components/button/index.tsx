@@ -16,6 +16,7 @@ interface IProps {
   primary?: boolean
   outline?: boolean
   transparent?: boolean
+  dark?: boolean
   children: React.ReactNode
   href?: string
   maxwidth?: number
@@ -25,6 +26,7 @@ export const Button: React.FC<IProps> = ({
   primary = true,
   outline,
   transparent,
+  dark,
   children,
   href,
   maxwidth,
@@ -34,6 +36,7 @@ export const Button: React.FC<IProps> = ({
     primary && css.primary,
     outline && css.outline,
     transparent && css.transparent,
+    dark && css.dark,
     href && css.href,
   )
 
