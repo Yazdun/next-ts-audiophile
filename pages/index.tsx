@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Banners, Categories, Hero, Layout, SEO } from '@components/index'
+import { Banners, Categories, Hero, Layout, SEO, Gear } from '@components/index'
 
 const Home: NextPage = () => {
   return (
@@ -9,6 +9,7 @@ const Home: NextPage = () => {
         <Hero />
         <Categories />
         <Banners />
+        <Gear />
       </Layout>
     </>
   )
