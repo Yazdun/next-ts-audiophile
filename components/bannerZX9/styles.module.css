@@ -14,6 +14,7 @@
   background-position: left;
   background-size: cover;
   overflow: hidden;
+  border-radius: 0.5rem;
 }
 
 .body {
@@ -36,6 +37,7 @@
 .desc {
   line-height: 1.563rem;
   font-size: var(--fs-300);
+  max-width: 21.813rem;
 }
 
 .img {
@@ -43,16 +45,8 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .banner {
-    border-radius: 0.5rem;
-  }
-
   .img {
     max-width: 12.313rem;
-  }
-
-  .desc {
-    max-width: 21.813rem;
   }
 }
 
@@ -68,11 +62,12 @@
   .body {
     align-items: flex-start;
     text-align: left;
+    margin-right: 4rem;
   }
 
   .img {
     position: absolute;
-    left: 136px;
+    left: 7.5rem;
     bottom: -1rem;
     max-width: 25.625rem;
   }

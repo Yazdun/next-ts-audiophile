@@ -41,6 +41,9 @@
 
   /* gaps */
   --gap-1: 10.5rem;
+
+  /* border radius */
+  --border-radius-1: 0.5rem;
 }
 
 *,
