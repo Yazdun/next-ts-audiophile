@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC BannerYX1
+|
+|  Purpose: SHOWS YX1 PRODUCT'S BANNER
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import { image_earphones_yx1 } from '@assets/home/desktop'
 import Image from 'next/image'

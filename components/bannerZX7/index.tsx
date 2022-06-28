@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC BannerZX7
+|
+|  Purpose: SHOWS ZX7 PRODUCT'S BANNER
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import css from './styles.module.css'
 import { Button } from '@components/index'
