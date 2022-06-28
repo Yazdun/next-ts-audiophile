@@ -7,7 +7,7 @@
 *-------------------------------------------------------------------*/
 
 import React from 'react'
-import { image_earphones_yx1 } from '@assets/home/desktop'
+import { image_earphones_yx1 } from '@assets/home/tablet'
 import Image from 'next/image'
 import css from './styles.module.css'
 import { Button } from '@components/index'
@@ -20,6 +20,7 @@ export const BannerYX1: React.FC = () => {
           src={image_earphones_yx1}
           alt="earphones yx1"
           placeholder="blur"
+          objectFit="cover"
         />
       </div>
       <div className={css.body}>
