@@ -4,7 +4,11 @@
   text-transform: uppercase;
   font-weight: bold;
   padding: 1rem 2rem;
-  transition: 0.3s;
+  transition: 0.3s background, 0.3s border;
+}
+
+.primary:focus-visible {
+  box-shadow: rgba(221, 149, 82, 0.4) 0px 0px 0px 4px;
 }
 
 .primary {

@@ -7,7 +7,7 @@
 .bg {
   width: 100%;
   background-color: var(--clr-dark-2);
-  border-bottom: 2px solid #2b2a2a;
+  border-bottom: 2px solid #1d1c1c;
 }
 
 .nav {
@@ -22,8 +22,8 @@
   background-color: inherit;
 }
 
-@media only screen and (min-width: 1040px) {
+/* @media only screen and (min-width: 1040px) {
   .bg {
     border-bottom: none;
   }
-}
+} */

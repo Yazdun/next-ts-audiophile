@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Hero, Layout, SEO } from '@components/index'
+import { Categories, Hero, Layout, SEO } from '@components/index'
 
 const Home: NextPage = () => {
   return (
@@ -7,6 +7,9 @@ const Home: NextPage = () => {
       <SEO />
       <Layout>
         <Hero />
+        <div style={{ marginTop: '10rem' }}>
+          <Categories />
+        </div>
       </Layout>
     </>
   )

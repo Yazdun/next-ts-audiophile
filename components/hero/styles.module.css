@@ -115,14 +115,14 @@
     background-color: white;
     z-index: -1;
     width: 100%;
-    height: 15rem;
-    bottom: -9rem;
+    height: 6rem;
+    bottom: -2rem;
     left: 0;
     right: 0;
-    transform: skewY(-3deg);
-    -webkit-transform: skewY(-3deg);
-    -moz-transform: skewY(-3deg);
-    -ms-transform: skewY(-3deg);
+    transform: skewY(-1deg);
+    -webkit-transform: skewY(-1deg);
+    -moz-transform: skewY(-1deg);
+    -ms-transform: skewY(-1deg);
   }
 }
 
