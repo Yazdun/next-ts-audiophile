@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  max-width: var(--max-width-1);
+  margin: var(--gap-1) auto;
+  padding: var(--p1);
+}
+
+.head {
+  height: 14.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: var(--clr-dark-1);
+  color: white;
+}
+
+.title {
+  font-size: var(--fs-800);
+  letter-spacing: 0.089rem;
+}

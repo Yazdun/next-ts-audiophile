@@ -14,5 +14,6 @@ export const routes = [
   {
     title: 'earphones',
     slug: '/category/earphones',
+    desc: '',
   },
 ]

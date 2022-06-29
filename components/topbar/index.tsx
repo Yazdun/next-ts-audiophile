@@ -19,8 +19,10 @@ export const Topbar: React.FC = () => {
         <nav className={css.nav}>
           <Hamburger />
           <Image src={project_logo} alt="audiophile" />
-          <Navigations />
-          <Cart />
+          <div className={css.desktop}>
+            <Navigations />
+            <Cart />
+          </div>
         </nav>
       </div>
     </div>

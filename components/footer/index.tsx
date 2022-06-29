@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Footer
+|
+|  Purpose:  LAYOUT'S SHARED FOOTER.
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import { project_logo } from '@assets/shared/desktop'
 import { routes } from '@utils/routes'
 import Image from 'next/image'
