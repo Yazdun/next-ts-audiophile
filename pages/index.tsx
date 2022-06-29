@@ -13,13 +13,11 @@ const Home: NextPage = () => {
   return (
     <>
       <SEO />
-      <Layout>
+      <Layout hideCategories>
         <Hero />
         <Categories />
         <Banners />
-        <Gear />
       </Layout>
-      <Footer />
     </>
   )
 }
