@@ -1,13 +1,5 @@
 import type { NextPage } from 'next'
-import {
-  Banners,
-  Categories,
-  Hero,
-  Layout,
-  SEO,
-  Gear,
-  Footer,
-} from '@components/index'
+import { Banners, Categories, Hero, Layout, SEO } from '@components/index'
 
 const Home: NextPage = () => {
   return (

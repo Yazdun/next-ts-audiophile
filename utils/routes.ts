@@ -1,18 +1,18 @@
 export const routes = [
   {
     title: 'home',
-    slug: '',
+    slug: '/',
   },
   {
     title: 'headphones',
-    slug: 'headphones',
+    slug: '/category/headphones',
   },
   {
     title: 'speakers',
-    slug: 'speakers',
+    slug: '/category/speakers',
   },
   {
     title: 'earphones',
-    slug: 'earphones',
+    slug: '/category/earphones',
   },
 ]

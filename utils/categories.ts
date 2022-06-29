@@ -4,17 +4,17 @@ import { ICategory } from '@models/category'
 export const categories: ICategory[] = [
   {
     title: 'headphones',
-    slug: 'headphones',
+    slug: '/category/headphones',
     image: shared_assets_desktop.image_category_thumbnail_headphones,
   },
   {
     title: 'speakers',
-    slug: 'speakers',
+    slug: '/category/speakers',
     image: shared_assets_desktop.image_category_thumbnail_speakers,
   },
   {
     title: 'earphones',
-    slug: 'earphones',
+    slug: '/category/earphones',
     image: shared_assets_desktop.image_category_thumbnail_earphones,
   },
 ]
