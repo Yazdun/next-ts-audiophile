@@ -36,7 +36,7 @@
 .desc {
   font-size: var(--fs-300);
   line-height: 1.563rem;
-  opacity: 0.8;
+  color: var(--clr-light-4);
 }
 
 @media only screen and (min-width: 768px) {

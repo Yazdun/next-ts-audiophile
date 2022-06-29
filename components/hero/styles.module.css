@@ -35,8 +35,9 @@
 
 .adv {
   font-size: var(--fs-200);
-  color: #8b8b8b;
+  color: var(--clr-light-4);
   letter-spacing: 0.625rem;
+  font-weight: bold;
 }
 
 .title {
@@ -49,7 +50,7 @@
 
 .desc {
   font-size: var(--fs-300);
-  color: #8b8b8b;
+  color: var(--clr-light-4);
   line-height: 1.563rem;
   max-width: 21.813rem;
 }

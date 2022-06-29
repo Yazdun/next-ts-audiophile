@@ -2,14 +2,26 @@ export interface IProduct {
   id: number
   slug: string
   name: string
-  image: object
+  image: IAsset
   category: string
-  categoryImage: string
+  categoryImage: IAsset
   new: boolean
   price: number
   description: string
   features: string
   includes: object[]
-  gallery: object
+  gallery: IGallery
   others: object[]
+}
+
+interface IAsset {
+  mobile: string
+  tablet: string
+  desktop: string
+}
+
+interface IGallery {
+  first: IAsset
+  second: IAsset
+  third: IAsset
 }

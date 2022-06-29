@@ -14,10 +14,12 @@ interface IProps {
 }
 
 const Home: NextPage<IProps> = props => {
+  const title = capitalize_first_letter(props.title)
+
   return (
     <>
       <SEO
-        title={capitalize_first_letter(props.title)}
+        title={title}
         desc={`Browse exceptional high quality ${props.title} on AudioPhile`}
       />
       <Layout>
@@ -25,9 +27,16 @@ const Home: NextPage<IProps> = props => {
           <h1 className={css.title}>{props.title}</h1>
         </div>
         <div className={css.container}>
-          {props.products.map(product => (
-            <Preview product={product} key={product.name} />
-          ))}
+          {props.products
+            .filter(product => product.new)
+            ?.map(product => (
+              <Preview product={product} key={product.name} />
+            ))}
+          {props.products
+            .filter(product => !product.new)
+            ?.map(product => (
+              <Preview product={product} key={product.name} />
+            ))}
         </div>
       </Layout>
     </>

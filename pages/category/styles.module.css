@@ -1,8 +1,8 @@
 .container {
   width: 100%;
   max-width: var(--max-width-1);
-  margin: var(--gap-1) auto;
   padding: var(--p1);
+  margin: auto;
 }
 
 .head {
@@ -13,6 +13,7 @@
   text-transform: uppercase;
   background-color: var(--clr-dark-1);
   color: white;
+  margin-bottom: 4.5rem;
 }
 
 .title {
