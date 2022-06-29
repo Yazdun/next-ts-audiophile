@@ -82,6 +82,10 @@
     gap: 2.5rem;
   }
 
+  .routes li {
+    font-size: var(--fs-200);
+  }
+
   .info {
     text-align: left;
   }
