@@ -8,7 +8,7 @@ interface IProps {
 export const Features: React.FC<IProps> = ({ text }) => {
   return (
     <div className={css.features}>
-      <h1 className={css.title}>Features</h1>
+      <h2 className={css.title}>Features</h2>
       <p className={css.text}>{text}</p>
     </div>
   )

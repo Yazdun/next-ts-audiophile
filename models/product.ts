@@ -1,3 +1,7 @@
+import { IAsset } from '@models/asset'
+import { IGallery } from '@models/gallery'
+import { IIncludes } from '@models/includes'
+
 export interface IProduct {
   id: number
   slug: string
@@ -9,19 +13,7 @@ export interface IProduct {
   price: number
   description: string
   features: string
-  includes: object[]
+  includes: IIncludes[]
   gallery: IGallery
   others: object[]
-}
-
-interface IAsset {
-  mobile: string
-  tablet: string
-  desktop: string
-}
-
-interface IGallery {
-  first: IAsset
-  second: IAsset
-  third: IAsset
 }
