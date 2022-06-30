@@ -9,10 +9,12 @@ interface IProps {
 
 export const Product: React.FC<IProps> = ({ product }) => {
   return (
-    <div className={css.container}>
-      <Showcase product={product} />
-      <Features text={product.features} />
-      <Includes includes={product.includes} />
-    </div>
+    <>
+      <div className={css.container}>
+        <Showcase product={product} />
+        <Features text={product.features} />
+        <Includes includes={product.includes} />
+      </div>
+    </>
   )
 }
