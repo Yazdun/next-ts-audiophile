@@ -14,7 +14,7 @@ export const BannerZX7: React.FC = () => {
   return (
     <div className={css.banner}>
       <h2 className={css.title}>zx7 speaker</h2>
-      <Button outline href="product" maxwidth={120}>
+      <Button outline href="/product/zx7-speaker" maxwidth={120}>
         see product
       </Button>
     </div>

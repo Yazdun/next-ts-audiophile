@@ -3,14 +3,16 @@ import Image from 'next/image'
 import React from 'react'
 import { Button } from '@components/index'
 import css from './styles.module.css'
+import cn from 'classnames'
 
 interface IProps {
   product: IProduct
+  reverse?: boolean
 }
 
-export const Preview: React.FC<IProps> = ({ product }) => {
+export const Preview: React.FC<IProps> = ({ product, reverse }) => {
   return (
-    <div className={css.container}>
+    <div className={cn(css.container, reverse && css.reverse)}>
       <div className={css.img}>
         <Image
           src={product.categoryImage.tablet}

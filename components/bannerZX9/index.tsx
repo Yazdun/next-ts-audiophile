@@ -26,7 +26,7 @@ export const BannerZX9: React.FC = () => {
           Upgrade to premium speakers that are phenomenally built to deliver
           truly remarkable sound.
         </p>
-        <Button dark href="/product" maxwidth={120}>
+        <Button dark href="/product/zx9-speaker" maxwidth={120}>
           see product
         </Button>
       </div>

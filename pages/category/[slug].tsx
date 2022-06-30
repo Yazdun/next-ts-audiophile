@@ -13,7 +13,7 @@ interface IProps {
   title: string
 }
 
-const Home: NextPage<IProps> = props => {
+const CategoryPage: NextPage<IProps> = props => {
   const title = capitalize_first_letter(props.title)
 
   return (
@@ -34,8 +34,12 @@ const Home: NextPage<IProps> = props => {
             ))}
           {props.products
             .filter(product => !product.new)
-            ?.map(product => (
-              <Preview product={product} key={product.name} />
+            ?.map((product, idx) => (
+              <Preview
+                product={product}
+                key={product.name}
+                reverse={idx % 2 === 0}
+              />
             ))}
         </div>
       </Layout>
@@ -69,4 +73,4 @@ export const getStaticProps: GetStaticProps = async context => {
   }
 }
 
-export default Home
+export default CategoryPage

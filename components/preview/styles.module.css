@@ -72,4 +72,8 @@
   .title {
     max-width: 19rem;
   }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
 }

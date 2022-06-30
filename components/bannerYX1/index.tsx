@@ -25,7 +25,7 @@ export const BannerYX1: React.FC = () => {
       </div>
       <div className={css.body}>
         <h2 className={css.title}>yx1 earphones</h2>
-        <Button outline maxwidth={120} href="product">
+        <Button outline maxwidth={120} href={`/product/yx1-earphones`}>
           see product
         </Button>
       </div>
