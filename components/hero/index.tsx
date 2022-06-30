@@ -28,7 +28,7 @@ export const Hero: React.FC = () => {
             Experience natural, lifelike audio and exceptional build quality
             made for the passionate music enthusiast.
           </p>
-          <Button href="/product" maxwidth={120}>
+          <Button href="/product/xx99-mark-two-headphones" maxwidth={120}>
             see product
           </Button>
         </div>
