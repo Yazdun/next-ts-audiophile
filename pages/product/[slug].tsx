@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import { GetStaticProps, GetStaticPaths } from 'next'
-import { Layout, SEO } from '@components/index'
+import { Layout, Product, SEO } from '@components/index'
 import { IProduct } from '@models/product'
 import css from './styles.module.css'
 import { products } from '@data/index'
@@ -16,9 +16,7 @@ const ProductPage: NextPage<IProps> = props => {
     <>
       <SEO title="Product" />
       <Layout>
-        <div className={css.container}>
-          <h1>{product.name}</h1>
-        </div>
+        <Product product={product} />
       </Layout>
     </>
   )
