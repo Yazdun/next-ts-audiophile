@@ -1,0 +1,16 @@
+.quantity {
+  background-color: var(--clr-light-1);
+  padding: 0.7rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.num {
+  font-weight: bold;
+}
+
+.cta {
+  font-size: 1.5rem;
+}

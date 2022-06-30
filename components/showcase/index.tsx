@@ -2,7 +2,7 @@ import { IProduct } from '@models/product'
 import React from 'react'
 import css from './styles.module.css'
 import Image from 'next/image'
-import { Button } from '@components/index'
+import { Button, Quantity } from '@components/index'
 
 interface IProps {
   product: IProduct
@@ -26,6 +26,7 @@ export const Showcase: React.FC<IProps> = ({ product }) => {
         <h1 className={css.title}>{name}</h1>
         <p className={css.desc}>{description}</p>
         <div className={css.cta}>
+          <Quantity maxwidth={163} />
           <Button>add to cart</Button>
         </div>
       </div>
