@@ -3,6 +3,24 @@
   box-shadow: rgba(171, 171, 189, 0.2) 0px 7px 29px 0px;
   padding: 2rem;
   border-radius: 2rem;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: -2rem;
+  right: -0.7rem;
+  padding: 1rem;
+  background-color: var(--clr-dark-1);
+  border-radius: 50%;
+  color: var(--clr-light-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.package {
+  font-size: 2rem;
 }
 
 .list {
@@ -38,5 +56,9 @@
   .title {
     font-size: var(--fs-700);
     width: 50%;
+  }
+
+  .package {
+    font-size: 3rem;
   }
 }

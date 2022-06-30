@@ -1,6 +1,7 @@
 import React from 'react'
 import { IIncludes } from '@models/includes'
 import css from './styles.module.css'
+import { FiPackage } from 'react-icons/fi'
 
 interface IProps {
   includes: IIncludes[]
@@ -9,6 +10,9 @@ interface IProps {
 export const Includes: React.FC<IProps> = ({ includes }) => {
   return (
     <div className={css.card}>
+      <div className={css.icon}>
+        <FiPackage className={css.package} />
+      </div>
       <h2 className={css.title}>in the box</h2>
       <ul className={css.list}>
         {includes.map(i => {
