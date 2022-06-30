@@ -1,12 +1,7 @@
 import type { NextPage } from 'next'
-import { Layout, Preview, SEO } from '@components/index'
-import { GetStaticProps, GetStaticPaths } from 'next'
-import { routes } from '@utils/routes'
-import { ParsedUrlQuery } from 'querystring'
-import { products } from '@data/index'
+import { Layout, SEO } from '@components/index'
 import { IProduct } from '@models/product'
 import css from './styles.module.css'
-import { capitalize_first_letter } from '@utils/index'
 
 interface IProps {
   products: IProduct[]
