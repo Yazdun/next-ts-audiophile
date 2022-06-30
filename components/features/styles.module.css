@@ -1,0 +1,21 @@
+.features {
+  margin: var(--gap-1) 0;
+}
+
+.text {
+  font-size: var(--fs-300);
+  line-height: 1.563rem;
+  color: var(--clr-light-4);
+  white-space: pre-line;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: var(--fs-600);
+}
+
+@media only screen and (min-width: 700px) {
+  .title {
+    font-size: var(--fs-700);
+  }
+}
