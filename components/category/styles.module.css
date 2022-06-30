@@ -1,6 +1,6 @@
 .card {
   color: black;
-  background-color: var(--clr-light-1);
+  box-shadow: var(--bs-2);
   border-radius: 0.5rem;
   position: relative;
   min-height: 6.313rem;
@@ -10,6 +10,7 @@
   justify-content: flex-end;
   align-items: center;
   padding: 2.25rem;
+  transition: 0.3s box-shadow;
 }
 
 .image {
@@ -50,6 +51,10 @@
 @media only screen and (min-width: 768px) {
   .card {
     width: 100%;
+  }
+
+  .card:hover {
+    box-shadow: var(--bs-3);
   }
 
   .card:hover .shop {

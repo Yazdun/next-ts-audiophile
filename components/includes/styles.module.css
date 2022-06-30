@@ -1,6 +1,6 @@
 .card {
   margin: var(--gap-1) 0;
-  box-shadow: rgba(171, 171, 189, 0.2) 0px 7px 29px 0px;
+  box-shadow: var(--bs-2);
   padding: 2rem;
   border-radius: 2rem;
   position: relative;
