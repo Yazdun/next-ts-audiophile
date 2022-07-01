@@ -21,14 +21,23 @@ export const Navigations = () => {
     <ul className={css.list}>
       {routes.map(route => {
         const { title, slug } = route
+
+        const isCurrent = router.query.slug === title
+        const isCategory = router.query.slug?.includes(title)
+        const isSubCategory = router.query.slug?.includes(
+          title.substring(0, title.length - 1),
+        )
+
         return (
           <li key={title}>
             <Link href={slug}>
               <a
                 className={cn(
                   css.link,
-                  router.query.slug === title && css.disable,
-                  router.pathname === '/' && slug === '/' && css.disable,
+                  isCurrent && css.active,
+                  isCategory && css.active,
+                  isSubCategory && css.active,
+                  router.pathname === '/' && slug === '/' && css.active,
                 )}
               >
                 {title}

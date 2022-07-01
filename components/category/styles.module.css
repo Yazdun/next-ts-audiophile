@@ -10,7 +10,7 @@
   justify-content: flex-end;
   align-items: center;
   padding: 2.25rem;
-  transition: 0.3s box-shadow;
+  transition: 0.3s;
 }
 
 .image {
