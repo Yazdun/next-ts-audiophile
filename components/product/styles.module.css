@@ -5,3 +5,8 @@
   max-width: var(--max-width-1);
   padding: var(--p1);
 }
+
+.others {
+  margin: var(--gap-1) 0;
+  margin-bottom: 11.5rem;
+}

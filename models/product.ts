@@ -1,6 +1,7 @@
 import { IAsset } from '@models/asset'
 import { IGallery } from '@models/gallery'
 import { IIncludes } from '@models/includes'
+import { ISuggestion } from '@models/suggestion'
 
 export interface IProduct {
   id: number
@@ -15,5 +16,5 @@ export interface IProduct {
   features: string
   includes: IIncludes[]
   gallery: IGallery
-  others: object[]
+  others: ISuggestion[]
 }

@@ -4,9 +4,10 @@ import Image from 'next/image'
 
 interface IProps {
   thumbnail: string
+  id: string
 }
 
-export const Thumbnail: React.FC<IProps> = ({ thumbnail }) => {
+export const Thumbnail: React.FC<IProps> = ({ thumbnail, id }) => {
   return (
     <div className={css.image}>
       <Image
