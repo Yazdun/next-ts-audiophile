@@ -13,9 +13,13 @@ import Link from 'next/link'
 import React from 'react'
 import css from './styles.module.css'
 import { SiFacebook, SiTwitter, SiInstagram } from 'react-icons/si'
+import { useRouter } from 'next/router'
+import cn from 'classnames'
 
 export const Footer: React.FC = () => {
   const year = new Date().getFullYear()
+  const router = useRouter()
+
   return (
     <footer className={css.footer}>
       <div className={css.container}>
@@ -24,10 +28,27 @@ export const Footer: React.FC = () => {
           <Image src={project_logo} alt="audiophile" />
           <ul className={css.routes}>
             {routes.map(route => {
+              const { title, slug } = route
+
+              const isCurrent = router.query.slug === title
+              const isCategory = router.query.slug?.includes(title)
+              const isSubCategory = router.query.slug?.includes(
+                title.substring(0, title.length - 1),
+              )
               return (
                 <li key={route.title}>
                   <Link href={route.slug}>
-                    <a>{route.title}</a>
+                    <a
+                      className={cn(
+                        css.link,
+                        isCurrent && css.active,
+                        isCategory && css.active,
+                        isSubCategory && css.active,
+                        router.pathname === '/' && slug === '/' && css.active,
+                      )}
+                    >
+                      {route.title}
+                    </a>
                   </Link>
                 </li>
               )

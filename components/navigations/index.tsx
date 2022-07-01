@@ -15,7 +15,6 @@ import cn from 'classnames'
 
 export const Navigations = () => {
   const router = useRouter()
-  console.log(router)
 
   return (
     <ul className={css.list}>
