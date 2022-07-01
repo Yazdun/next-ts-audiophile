@@ -16,6 +16,11 @@
   color: var(--clr-primary-1);
 }
 
+.disable {
+  pointer-events: none;
+  color: var(--clr-primary-1);
+}
+
 @media only screen and (max-width: 1040px) {
   .list {
     display: none;

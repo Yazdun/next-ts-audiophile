@@ -5,6 +5,7 @@ import { IProduct } from '@models/product'
 import css from './styles.module.css'
 import { products } from '@data/index'
 import { ParsedUrlQuery } from 'querystring'
+import { capitalize_first_letter } from '@utils/capitalize_first_letter'
 
 interface IProps {
   product: IProduct
@@ -14,7 +15,10 @@ const ProductPage: NextPage<IProps> = props => {
   const { product } = props
   return (
     <>
-      <SEO title="Product" />
+      <SEO
+        title={capitalize_first_letter(product.name)}
+        desc={product.description}
+      />
       <Layout>
         <Product product={product} />
       </Layout>
