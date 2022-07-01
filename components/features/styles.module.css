@@ -12,6 +12,8 @@
 .title {
   margin-bottom: 2rem;
   font-size: var(--fs-600);
+  text-transform: uppercase;
+  letter-spacing: 0.088rem;
 }
 
 @media only screen and (min-width: 700px) {

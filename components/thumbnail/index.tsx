@@ -7,7 +7,7 @@ interface IProps {
   id: string
 }
 
-export const Thumbnail: React.FC<IProps> = ({ thumbnail, id }) => {
+export const Thumbnail: React.FC<IProps> = ({ thumbnail }) => {
   return (
     <div className={css.image}>
       <Image

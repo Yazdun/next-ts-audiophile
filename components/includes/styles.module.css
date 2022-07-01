@@ -44,7 +44,7 @@
 
 .title {
   text-transform: uppercase;
-  font-size: var(--fs-500);
+  font-size: var(--fs-600);
   letter-spacing: 0.088rem;
   margin-bottom: 2rem;
 }

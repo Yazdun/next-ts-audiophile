@@ -21,11 +21,14 @@ export const Product: React.FC<IProps> = ({ product }) => {
         <Features text={product.features} />
         <Includes includes={product.includes} />
         <Gallery gallery={product.gallery} />
-        <ul className={css.others}>
-          {product.others.map(sug => {
-            return <Suggestion suggestion={sug} key={sug.name} />
-          })}
-        </ul>
+        <div className={css.suggestions}>
+          <h2 className={css.title}>you may also like</h2>
+          <ul className={css.others}>
+            {product.others.map(sug => {
+              return <Suggestion suggestion={sug} key={sug.name} />
+            })}
+          </ul>
+        </div>
       </div>
     </>
   )

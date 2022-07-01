@@ -7,6 +7,31 @@
 }
 
 .others {
-  margin: var(--gap-1) 0;
   margin-bottom: 11.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.suggestions {
+  margin: var(--gap-1) 0;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: var(--fs-600);
+  text-transform: uppercase;
+  letter-spacing: 0.088rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .others {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .title {
+    font-size: var(--fs-700);
+  }
 }

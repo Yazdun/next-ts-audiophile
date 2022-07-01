@@ -547,9 +547,9 @@ export const products = [
         name: 'ZX7 Speaker',
 
         image: {
-          mobile: shared_assets_mobile.image_zx9_speaker,
-          tablet: shared_assets_tablet.image_zx9_speaker,
-          desktop: shared_assets_desktop.image_zx9_speaker,
+          mobile: shared_assets_mobile.image_zx7_speaker,
+          tablet: shared_assets_tablet.image_zx7_speaker,
+          desktop: shared_assets_desktop.image_zx7_speaker,
         },
       },
       {
