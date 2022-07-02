@@ -1,28 +1,26 @@
-import { createContext, useContext } from 'react'
+import { createContext, useContext, useState } from 'react'
+import { useLocalStorage } from 'usehooks-ts'
 
-interface AppContextInterface {
-  name: string
-  author: string
-  url: string
+interface ICartItem {
+  productId: number
+  quantity: string
 }
 
 interface IProps {
   children: React.ReactNode
 }
 
-const CartContext = createContext<AppContextInterface | null>(null)
+const CartContext = createContext<ICartItem | null>(null)
 
-const sampleAppContext: AppContextInterface = {
-  name: 'Using React Context in a Typescript App',
-  author: 'thehappybug',
-  url: 'http://www.example.com',
+const sampleAppContext: ICartItem = {
+  productId: 1,
+  quantity: 'thehappybug',
 }
 
-export const CartProvider: React.FC<IProps> = ({ children }) => (
-  <CartContext.Provider value={sampleAppContext}>
-    {children}
-  </CartContext.Provider>
-)
+export const CartProvider: React.FC<IProps> = ({ children }) => {
+  const [cart, setCart] = useLocalStorage<ICartItem>('cart', sampleAppContext)
+  return <CartContext.Provider value={cart}>{children}</CartContext.Provider>
+}
 
 export function useCart() {
   return useContext(CartContext)

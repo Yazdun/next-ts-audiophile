@@ -3,7 +3,7 @@
 :root {
   /* colors */
   --clr-primary-1: #d87d4a;
-  --clr-primary-2: #fbaf85;
+  --clr-primary-2: #cc5a18;
   --clr-light-1: #f1f1f1;
   --clr-light-2: #fafafa;
   --clr-light-3: #ffffff;
@@ -54,10 +54,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 body {
