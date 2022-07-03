@@ -17,7 +17,6 @@
   left: 0;
   right: 0;
   z-index: -1;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   border-bottom: 2px solid rgb(36, 36, 36);
 
   padding: var(--p1);

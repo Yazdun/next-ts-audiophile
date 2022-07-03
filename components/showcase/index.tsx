@@ -3,13 +3,15 @@ import React from 'react'
 import css from './styles.module.css'
 import Image from 'next/image'
 import { Button, Quantity } from '@components/index'
+import { useCart } from '@context/index'
 
 interface IProps {
   product: IProduct
 }
 
 export const Showcase: React.FC<IProps> = ({ product }) => {
-  const { name, description, image, new: newProduct } = product
+  const { name, description, image, new: newProduct, id } = product
+  const { increase, decrease } = useCart()
 
   return (
     <div className={css.container}>
@@ -26,8 +28,8 @@ export const Showcase: React.FC<IProps> = ({ product }) => {
         <h1 className={css.title}>{name}</h1>
         <p className={css.desc}>{description}</p>
         <div className={css.cta}>
-          <Quantity maxwidth={163} />
-          <Button>add to cart</Button>
+          <Quantity maxwidth={163} product={product} />
+          <Button onClick={() => increase(id)}>add to cart</Button>
         </div>
       </div>
     </div>

@@ -87,6 +87,10 @@ ul {
   list-style-type: none;
 }
 
+button:disabled {
+  cursor: not-allowed;
+}
+
 /* remove arrow/spinners from number input*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
