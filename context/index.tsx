@@ -10,16 +10,21 @@ interface IProps {
   children: React.ReactNode
 }
 
-const CartContext = createContext<ICartItem | null>(null)
-
-const sampleAppContext: ICartItem = {
-  productId: 1,
-  quantity: 'thehappybug',
+interface IContext {
+  cart: ICartItem[] | null
+  setCart: any
 }
 
+const CartContext = createContext<IContext | null>(null)
+
 export const CartProvider: React.FC<IProps> = ({ children }) => {
-  const [cart, setCart] = useLocalStorage<ICartItem>('cart', sampleAppContext)
-  return <CartContext.Provider value={cart}>{children}</CartContext.Provider>
+  const [cart, setCart] = useLocalStorage('cart', null)
+
+  return (
+    <CartContext.Provider value={{ cart, setCart }}>
+      {children}
+    </CartContext.Provider>
+  )
 }
 
 export function useCart() {

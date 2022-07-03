@@ -83,11 +83,12 @@
 @media only screen and (min-width: 1040px) {
   .wrapper {
     background-image: linear-gradient(
-      to top,
-      rgb(56, 26, 1),
-      rgba(0, 0, 0, 0.4)
-    );
-    min-height: auto;
+        to top,
+        rgb(56, 26, 1),
+        rgba(0, 0, 0, 0.4)
+      ),
+      none;
+    min-height: 632px;
     height: 632px;
     background-position: center;
     position: relative;
