@@ -4,6 +4,8 @@ import { ICartItem } from '@models/cart'
 import { IProduct } from '@models/product'
 import React from 'react'
 import css from './styles.module.css'
+import { AnimatePresence, motion } from 'framer-motion'
+import { framer_count } from './framer'
 
 interface IProps {
   maxwidth: number | string
@@ -16,6 +18,7 @@ export const Quantity: React.FC<IProps> = ({ maxwidth = 'auto', product }) => {
   const itemExists: ICartItem = cart?.find(
     (item: ICartItem) => item.id === product.id,
   )
+  const count = itemExists ? itemExists.quantity : 0
 
   if (!isMounted) {
     return null
@@ -30,7 +33,11 @@ export const Quantity: React.FC<IProps> = ({ maxwidth = 'auto', product }) => {
       >
         -
       </button>
-      <span className={css.num}>{itemExists ? itemExists.quantity : 0}</span>
+      <AnimatePresence initial={false} exitBeforeEnter>
+        <motion.span key={count} className={css.num} {...framer_count}>
+          {count}
+        </motion.span>
+      </AnimatePresence>
       <button
         className={css.cta}
         onClick={() => increase(product.id)}

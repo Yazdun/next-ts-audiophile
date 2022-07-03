@@ -9,6 +9,10 @@
 
 .num {
   font-weight: bold;
+  min-width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cta {

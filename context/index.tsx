@@ -1,6 +1,8 @@
 import { ICartItem } from '@models/cart'
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
 import { useLocalStorage } from 'usehooks-ts'
+import { products } from '@data/index'
+import { useRouter } from 'next/router'
 
 interface IProps {
   children: React.ReactNode
@@ -10,6 +12,7 @@ const CartContext = createContext<any>(null)
 
 export const CartProvider: React.FC<IProps> = ({ children }) => {
   const [cart, setCart] = useLocalStorage<ICartItem[] | null>('cart', null)
+  const router = useRouter()
 
   const updateCart = (id: number, isDecrease?: boolean) => {
     const isExist = cart?.find((item: ICartItem) => item.id === id)
@@ -47,6 +50,15 @@ export const CartProvider: React.FC<IProps> = ({ children }) => {
       setCart(prev => (prev ? [...prev, product] : [product]))
     }
   }
+
+  useEffect(() => {
+    cart?.forEach(item => {
+      const { id, quantity } = item
+      if (quantity > 3 || quantity < 0 || id > products.length || id <= 0) {
+        setCart(null)
+      }
+    })
+  }, [cart])
 
   return (
     <CartContext.Provider value={{ cart, increase, decrease }}>
