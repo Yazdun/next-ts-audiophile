@@ -11,27 +11,19 @@ import { Squash as BurgerButton } from 'hamburger-react'
 import css from './styles.module.css'
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { framer_menu_desktop, framer_menu_mobile } from './framer'
-import { useWindowSize, useIsMounted } from '@hooks/index'
+import { framer_menu } from './framer'
 import { useOnClickOutside } from 'usehooks-ts'
-import { Categories } from '@components/index'
+import { routes } from '@utils/routes'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import cn from 'classnames'
 
 export const Hamburger: React.FC = () => {
   const [open, setOpen] = useState(false)
-  const isMounted = useIsMounted()
-  const { isTouch } = useWindowSize()
   const ref = useRef(null)
-  const animations = isTouch ? framer_menu_mobile : framer_menu_desktop
+  const router = useRouter()
 
   useOnClickOutside(ref, () => setOpen(false))
-
-  useEffect(() => {
-    setOpen(false)
-  }, [isTouch])
-
-  if (!isMounted) {
-    return null
-  }
 
   return (
     <div ref={ref} className={css.container}>
@@ -45,9 +37,36 @@ export const Hamburger: React.FC = () => {
       </div>
       <AnimatePresence>
         {open && (
-          <motion.div className={css.wrapper} {...animations}>
-            <Categories />
-          </motion.div>
+          <motion.ul className={css.list} {...framer_menu}>
+            {routes.map(route => {
+              const { Icon, slug, title } = route
+
+              const isCurrent = router.query.slug === title
+              const isCategory = router.query.slug?.includes(title)
+              const isSubCategory = router.query.slug?.includes(
+                title.substring(0, title.length - 1),
+              )
+              return (
+                <li>
+                  <Link href={slug}>
+                    <a
+                      className={cn(
+                        css.link,
+                        isCurrent && css.active,
+                        isCategory && css.active,
+                        isSubCategory && css.active,
+                        router.pathname === '/' && slug === '/' && css.active,
+                      )}
+                      onClick={() => setOpen(false)}
+                    >
+                      {title}
+                      <Icon className={css.icon} />
+                    </a>
+                  </Link>
+                </li>
+              )
+            })}
+          </motion.ul>
         )}
       </AnimatePresence>
     </div>
