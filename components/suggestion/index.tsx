@@ -17,6 +17,7 @@ export const Suggestion: React.FC<IProps> = ({ suggestion }) => {
         <Image
           src={isTouch ? suggestion.image.mobile : suggestion.image.desktop}
           objectFit="cover"
+          placeholder="blur"
         />
       </div>
       <h3 className={css.title}>{suggestion.name}</h3>
