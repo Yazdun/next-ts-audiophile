@@ -40,7 +40,6 @@ export const CartProvider: React.FC<IProps> = ({ children }) => {
 
   const increase = (id: number) => {
     const newCart = updateCart(id)
-
     if (newCart) {
       setCart(newCart)
     } else {

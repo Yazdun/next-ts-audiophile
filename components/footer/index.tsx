@@ -68,7 +68,12 @@ export const Footer: React.FC = () => {
             {socials.map(soc => {
               return (
                 <li key={soc.title}>
-                  <a href={soc.href} target="_blank" title={soc.title}>
+                  <a
+                    href={soc.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    title={soc.title}
+                  >
                     {soc.icon}
                   </a>
                 </li>

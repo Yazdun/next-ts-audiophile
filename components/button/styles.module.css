@@ -4,7 +4,7 @@
   text-transform: uppercase;
   font-weight: bold;
   padding: 1rem 2rem;
-  transition: 0.3s background, 0.3s border;
+  transition: 0.3s background, 0.3s border, 0.3s opacity;
 }
 
 .primary:focus-visible {

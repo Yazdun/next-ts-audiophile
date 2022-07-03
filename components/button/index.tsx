@@ -21,6 +21,7 @@ interface IProps {
   href?: string
   maxwidth?: number
   onClick?: any
+  disabled?: boolean
 }
 
 export const Button: React.FC<IProps> = ({
@@ -32,6 +33,7 @@ export const Button: React.FC<IProps> = ({
   href,
   maxwidth,
   onClick,
+  disabled,
 }) => {
   const variants = cn(
     css.btn,
@@ -57,7 +59,7 @@ export const Button: React.FC<IProps> = ({
   }
 
   return (
-    <button className={variants} onClick={onClick}>
+    <button className={variants} onClick={onClick} disabled={disabled}>
       {children}
       <MdNavigateNext className={css.icon} />
     </button>

@@ -13,4 +13,5 @@
 
 .cta {
   font-size: 1.5rem;
+  transition: 0.3s opacity;
 }
