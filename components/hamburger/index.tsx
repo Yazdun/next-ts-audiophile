@@ -47,7 +47,7 @@ export const Hamburger: React.FC = () => {
                 title.substring(0, title.length - 1),
               )
               return (
-                <li>
+                <li key={route.title}>
                   <Link href={slug}>
                     <a
                       className={cn(
