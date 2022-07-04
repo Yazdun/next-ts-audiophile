@@ -1,5 +1,6 @@
 .count {
   position: absolute;
+  color: black;
   left: -0.5rem;
   bottom: -0.5rem;
   font-weight: 900;

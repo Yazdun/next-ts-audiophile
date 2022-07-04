@@ -7,20 +7,26 @@
 *-------------------------------------------------------------------*/
 
 import { useCart } from '@context/index'
-import React from 'react'
+import React, { useState } from 'react'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { Count } from '@components/index'
 import css from './styles.module.css'
 
 export const Cart: React.FC = () => {
   const { cart } = useCart()
+  const [open, setOpen] = useState(false)
 
   return (
-    <div>
-      <button className={css.cta}>
+    <>
+      <button className={css.cta} onClick={() => setOpen(prev => !prev)}>
         <AiOutlineShoppingCart />
         <Count />
       </button>
-    </div>
+      {open && (
+        <div>
+          <h1>sidebar</h1>
+        </div>
+      )}
+    </>
   )
 }
