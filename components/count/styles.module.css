@@ -1,0 +1,14 @@
+.count {
+  position: absolute;
+  left: -0.5rem;
+  bottom: -0.5rem;
+  font-weight: 900;
+  background-color: var(--clr-primary-1);
+  font-size: 0.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

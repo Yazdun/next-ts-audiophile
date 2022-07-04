@@ -42,6 +42,11 @@
   display: block;
 }
 
+.item_name {
+  color: var(--clr-light-4);
+  font-weight: 500;
+}
+
 .title {
   text-transform: uppercase;
   font-size: var(--fs-600);
