@@ -10,7 +10,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgb(25, 25, 25);
+  background-color: var(--clr-dark-2);
   z-index: 1;
   margin-bottom: var(--gap-1);
 }
@@ -82,12 +82,7 @@
 
 @media only screen and (min-width: 1040px) {
   .wrapper {
-    background-image: linear-gradient(
-        to top,
-        rgb(56, 26, 1),
-        rgba(0, 0, 0, 0.4)
-      ),
-      none;
+    background-image: none;
     min-height: 632px;
     height: 632px;
     background-position: center;
