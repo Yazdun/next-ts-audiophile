@@ -12,6 +12,7 @@ import { AiOutlineShoppingCart } from 'react-icons/ai'
 import css from './styles.module.css'
 import { Count } from '@components/index'
 import { Sidebar } from '@components/index'
+import { AnimatePresence } from 'framer-motion'
 
 export const Cart: React.FC = () => {
   const { cart } = useCart()
@@ -25,7 +26,9 @@ export const Cart: React.FC = () => {
         <AiOutlineShoppingCart />
         <Count />
       </button>
-      {open && <Sidebar fn={closeSidbar} />}
+      <AnimatePresence exitBeforeEnter initial={false}>
+        {open && <Sidebar fn={closeSidbar} />}
+      </AnimatePresence>
     </>
   )
 }

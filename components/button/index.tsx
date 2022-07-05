@@ -59,7 +59,12 @@ export const Button: React.FC<IProps> = ({
   }
 
   return (
-    <button className={variants} onClick={onClick} disabled={disabled}>
+    <button
+      className={variants}
+      onClick={onClick}
+      disabled={disabled}
+      style={{ maxWidth: maxwidth ? maxwidth : '100%' }}
+    >
       {children}
       <MdNavigateNext className={css.icon} />
     </button>

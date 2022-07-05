@@ -29,7 +29,7 @@ export const Quantity: React.FC<IProps> = ({ maxwidth = 'auto', product }) => {
       <button
         className={css.cta}
         onClick={() => decrease(product.id)}
-        disabled={itemExists?.quantity === 0}
+        disabled={count === 0}
       >
         -
       </button>
@@ -41,7 +41,7 @@ export const Quantity: React.FC<IProps> = ({ maxwidth = 'auto', product }) => {
       <button
         className={css.cta}
         onClick={() => increase(product.id)}
-        disabled={itemExists?.quantity >= 3}
+        disabled={count >= 3}
       >
         +
       </button>
