@@ -8,9 +8,12 @@ import { framer_count } from './framer'
 export const Count = () => {
   const { cart } = useCart()
 
-  const count = cart?.reduce((a: ICartItem, b: ICartItem) => {
-    return a.quantity + b.quantity
-  })
+  const q = cart?.map((item: ICartItem) => item.quantity)
+  const count = q?.reduce(
+    (previousValue: number, currentValue: number) =>
+      previousValue + currentValue,
+    0,
+  )
 
   return (
     <AnimatePresence initial={false} exitBeforeEnter>
