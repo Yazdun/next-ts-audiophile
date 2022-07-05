@@ -8,7 +8,7 @@
   min-height: calc(100vh - 79px);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-color: var(--clr-dark-2);
   z-index: 1;
   margin-bottom: var(--gap-1);
