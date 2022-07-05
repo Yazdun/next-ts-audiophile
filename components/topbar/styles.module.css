@@ -7,7 +7,6 @@
 .bg {
   width: 100%;
   background-color: var(--clr-dark-2);
-  /* border-bottom: 2px solid #1d1c1c; */
 }
 
 .nav {
