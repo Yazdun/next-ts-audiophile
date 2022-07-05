@@ -38,6 +38,7 @@
   line-height: 1.563rem;
   font-size: var(--fs-300);
   max-width: 21.813rem;
+  font-weight: 600;
 }
 
 .img {

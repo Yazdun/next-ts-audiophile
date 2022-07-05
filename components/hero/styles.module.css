@@ -5,7 +5,7 @@
       rgba(0, 0, 0, 0.3)
     ),
     url('../../assets/home/mobile/image-header.jpg');
-  min-height: calc(100vh - 79px);
+  min-height: calc(100vh - 77px);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -84,8 +84,9 @@
     background-image: none;
     min-height: 632px;
     height: 632px;
-    background-position: center;
     position: relative;
+    background-size: cover;
+    background-position: bottom;
   }
 
   .container {
