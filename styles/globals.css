@@ -7,7 +7,7 @@
   --clr-light-1: #f1f1f1;
   --clr-light-2: #fafafa;
   --clr-light-3: #ffffff;
-  --clr-light-4: #7f7f7f;
+  --clr-light-4: #6d6d6d;
   --clr-light-5: #cfcfcf;
   --clr-dark-1: #101010;
   --clr-dark-2: #000000;
@@ -38,7 +38,7 @@
 
   /* box shadows */
   --bs-1: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  --bs-2: rgba(171, 171, 189, 0.2) 0px 7px 29px 0px;
+  --bs-2: rgba(171, 171, 189, 0.4) 0px 7px 29px 0px;
   --bs-3: rgba(171, 171, 189, 0.4) 0px 7px 29px 0px;
 
   /* gaps */
