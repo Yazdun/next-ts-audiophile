@@ -32,7 +32,12 @@ export const Showcase: React.FC<IProps> = ({ product }) => {
         <h1 className={css.title}>{name}</h1>
         <p className={css.desc}>{description}</p>
         <div className={css.cta}>
-          <Quantity maxwidth={170} product={product} key={product.name} />
+          <Quantity
+            maxwidth={170}
+            product={product}
+            key={product.name}
+            transparent={false}
+          />
           <Button
             onClick={() => increase(id)}
             disabled={itemExists?.quantity >= 3 && true}
