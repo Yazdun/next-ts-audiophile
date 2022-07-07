@@ -71,3 +71,23 @@
   flex-direction: column;
   gap: 2rem;
 }
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: var(--p1) 0;
+}
+
+.empty svg {
+  font-size: 3rem;
+}
+
+.empty p {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}

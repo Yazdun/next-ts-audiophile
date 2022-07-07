@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import { BiShoppingBag } from 'react-icons/bi'
 import css from './styles.module.css'
 import { AnimatePresence, motion } from 'framer-motion'
 import { framer_background, framer_sidebar } from './framer'
@@ -32,11 +33,19 @@ export const Sidebar: React.FC<IProps> = ({ fn }) => {
             <VscChromeClose />
           </button>
         </div>
-        <motion.ul className={css.list} layout>
-          {cart.map((item: ICartItem) => {
-            return <CartItem item={item} key={item.id} />
-          })}
-        </motion.ul>
+        {!cart ||
+          (cart.length === 0 ? (
+            <div className={css.empty}>
+              <BiShoppingBag />
+              <p>your cart is empty</p>
+            </div>
+          ) : (
+            <motion.ul className={css.list} layout>
+              {cart.map((item: ICartItem) => {
+                return <CartItem item={item} key={item.id} />
+              })}
+            </motion.ul>
+          ))}
         <Link href="/checkout">
           <a className={css.link}>
             <TiShoppingCart />
