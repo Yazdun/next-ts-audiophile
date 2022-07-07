@@ -1,0 +1,32 @@
+.image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  font-size: 0.9rem;
+}
+
+.name {
+  font-weight: 900;
+}
+
+.price {
+  color: var(--clr-light-4);
+  margin-top: 0.2rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

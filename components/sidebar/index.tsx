@@ -4,9 +4,11 @@ import { motion } from 'framer-motion'
 import { framer_background, framer_sidebar } from './framer'
 import { useOnClickOutside } from 'usehooks-ts'
 import { VscChromeClose } from 'react-icons/vsc'
-import { Button } from '@components/index'
 import { TiShoppingCart } from 'react-icons/ti'
 import Link from 'next/link'
+import { useCart } from '@context/index'
+import { ICartItem } from '@models/cart'
+import { CartItem } from '..'
 
 interface IProps {
   fn: any
@@ -15,6 +17,7 @@ interface IProps {
 export const Sidebar: React.FC<IProps> = ({ fn }) => {
   const ref = useRef(null)
   useOnClickOutside(ref, fn)
+  const { cart } = useCart()
 
   return (
     <>
@@ -29,6 +32,11 @@ export const Sidebar: React.FC<IProps> = ({ fn }) => {
             <VscChromeClose />
           </button>
         </div>
+        <ul className={css.list}>
+          {cart.map((item: ICartItem) => {
+            return <CartItem item={item} />
+          })}
+        </ul>
         <Link href="/checkout">
           <a className={css.link}>
             <TiShoppingCart />

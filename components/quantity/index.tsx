@@ -6,13 +6,19 @@ import React from 'react'
 import css from './styles.module.css'
 import { AnimatePresence, motion } from 'framer-motion'
 import { framer_count } from './framer'
+import cn from 'classnames'
 
 interface IProps {
-  maxwidth: number | string
-  product: IProduct
+  maxwidth?: number | string
+  product: IProduct | any
+  transparent?: boolean
 }
 
-export const Quantity: React.FC<IProps> = ({ maxwidth = 'auto', product }) => {
+export const Quantity: React.FC<IProps> = ({
+  maxwidth = 'auto',
+  product,
+  transparent,
+}) => {
   const { cart, increase, decrease } = useCart()
   const isMounted = useIsMounted()
   const itemExists: ICartItem = cart?.find(
@@ -25,9 +31,12 @@ export const Quantity: React.FC<IProps> = ({ maxwidth = 'auto', product }) => {
   }
 
   return (
-    <div className={css.quantity} style={{ maxWidth: maxwidth }}>
+    <div
+      className={cn(css.quantity, transparent && css.transparent)}
+      style={{ maxWidth: maxwidth ? maxwidth : 'auto' }}
+    >
       <button
-        className={css.cta}
+        className={cn(css.cta, css.decrease)}
         onClick={() => decrease(product.id)}
         disabled={count === 0}
       >
@@ -39,7 +48,7 @@ export const Quantity: React.FC<IProps> = ({ maxwidth = 'auto', product }) => {
         </motion.span>
       </AnimatePresence>
       <button
-        className={css.cta}
+        className={cn(css.cta, css.increase)}
         onClick={() => increase(product.id)}
         disabled={count >= 3}
       >

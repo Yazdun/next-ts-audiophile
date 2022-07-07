@@ -7,6 +7,7 @@ export interface IProduct {
   id: number
   slug: string
   name: string
+  shortName: string
   image: IAsset
   category: string
   categoryImage: IAsset

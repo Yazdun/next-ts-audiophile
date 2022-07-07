@@ -33,6 +33,7 @@ export const products = [
     id: 1,
     slug: 'yx1-earphones',
     name: 'YX1 Wireless Earphones',
+    shortName: 'YX1',
     image: {
       mobile: product_yx1_earphones_mobile.image_product,
       tablet: product_yx1_earphones_tablet.image_product,
@@ -123,6 +124,7 @@ export const products = [
     id: 2,
     slug: 'xx59-headphones',
     name: 'XX59 Headphones',
+    shortName: 'XX59',
     image: {
       mobile: product_xx59_headphones_mobile.image_product,
       tablet: product_xx59_headphones_tablet.image_product,
@@ -209,6 +211,7 @@ export const products = [
     id: 3,
     slug: 'xx99-mark-one-headphones',
     name: 'XX99 Mark I Headphones',
+    shortName: 'XX99 Mark I',
     image: {
       mobile: product_xx99_mark_one_headphones_mobile.image_product,
       tablet: product_xx99_mark_one_headphones_tablet.image_product,
@@ -299,6 +302,7 @@ export const products = [
     id: 4,
     slug: 'xx99-mark-two-headphones',
     name: 'XX99 Mark II Headphones',
+    shortName: 'XX99 Mark II',
     image: {
       mobile: product_xx99_mark_two_headphones_mobile.image_product,
       tablet: product_xx99_mark_two_headphones_tablet.image_product,
@@ -393,6 +397,7 @@ export const products = [
     id: 5,
     slug: 'zx7-speaker',
     name: 'ZX7 Speaker',
+    shortName: 'ZX7',
     image: {
       mobile: product_zx7_speaker_mobile.image_product,
       tablet: product_zx7_speaker_tablet.image_product,
@@ -485,6 +490,7 @@ export const products = [
     id: 6,
     slug: 'zx9-speaker',
     name: 'ZX9 Speaker',
+    shortName: 'ZX9',
     image: {
       mobile: product_zx9_speaker_mobile.image_product,
       tablet: product_zx9_speaker_tablet.image_product,

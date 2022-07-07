@@ -19,3 +19,26 @@
   font-size: 1.5rem;
   transition: 0.3s opacity;
 }
+
+.transparent {
+  background-color: var(--clr-light-2);
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  max-width: auto !important;
+  padding: 0;
+}
+
+.transparent .decrease {
+  /* color: rgb(255, 60, 60); */
+  font-weight: 600;
+}
+
+.transparent .increase {
+  color: rgb(19, 204, 19);
+  font-weight: 600;
+}
+
+.increase:disabled {
+  color: rgb(172, 172, 172);
+}
