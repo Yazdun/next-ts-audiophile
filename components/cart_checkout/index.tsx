@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import NumberFormat from 'react-number-format'
 import { framer_money } from './framer'
 
-export const Checkout = () => {
+export const CartCheckout = () => {
   const { cart } = useCart()
 
   const prices = cart?.map((cartItem: ICartItem) => {

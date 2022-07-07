@@ -7,7 +7,7 @@ import { useOnClickOutside } from 'usehooks-ts'
 import { VscChromeClose } from 'react-icons/vsc'
 import { useCart } from '@context/index'
 import { ICartItem } from '@models/cart'
-import { CartItem, Checkout } from '@components/index'
+import { CartItem, CartCheckout } from '@components/index'
 
 interface IProps {
   fn: any
@@ -25,7 +25,7 @@ export const Sidebar: React.FC<IProps> = ({ fn }) => {
       <motion.div className={css.sidebar} {...framer_sidebar} ref={ref}>
         <Header fn={fn} />
         {cartExists ? <EmptyCart /> : <RenderCart />}
-        <Checkout />
+        <CartCheckout />
       </motion.div>
     </>
   )
