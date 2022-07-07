@@ -1,3 +1,12 @@
+/*-------------------------------------------------------------------
+|  React FC Thumbnail
+|
+|  Purpose: THIS COMPONENT IS ONLY USED IN THE `GALLERY` COMPONENT TO 
+|           SHOW CERTAIN GALLERY IMAGE
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import css from './styles.module.css'
 import Image from 'next/image'

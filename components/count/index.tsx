@@ -1,3 +1,12 @@
+/*-------------------------------------------------------------------
+|  React FC Count
+|
+|  Purpose: COUNTS CART ITEMS IN ORDER TO SHOW THEM ON THE NAVIGATION
+|           `CARD` BUTTON
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import css from './styles.module.css'
 import { AnimatePresence, motion } from 'framer-motion'

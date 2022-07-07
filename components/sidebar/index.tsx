@@ -1,7 +1,15 @@
+/*-------------------------------------------------------------------
+|  React FC Sidebar
+|
+|  Purpose: CART'S SIDEBAR
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React, { useRef } from 'react'
 import { BiShoppingBag } from 'react-icons/bi'
 import css from './styles.module.css'
-import { AnimatePresence, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { framer_background, framer_sidebar } from './framer'
 import { useOnClickOutside } from 'usehooks-ts'
 import { VscChromeClose } from 'react-icons/vsc'

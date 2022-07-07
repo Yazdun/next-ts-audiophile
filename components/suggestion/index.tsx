@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Suggestion
+|
+|  Purpose: RENDERS THE OTHER PRODUCT'S SUGGESTION ON THE PRODUCT'S PAGE
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import { ISuggestion } from '@models/suggestion'
 import css from './styles.module.css'

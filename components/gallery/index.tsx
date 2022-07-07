@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Gallery
+|
+|  Purpose: RENDERS 3 PRODUCT'S IMAGES ON THE PRODUCT'S PAGE
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import { IGallery } from '@models/gallery'
 import React from 'react'
 import css from './styles.module.css'

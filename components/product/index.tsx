@@ -1,3 +1,12 @@
+/*-------------------------------------------------------------------
+|  React FC Product
+|
+|  Purpose: THIS COMPONENT RENDERS THE WHOLE PRODUCT'S INFO ON THE 
+|           PRODUCT'S PAGE
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import { IProduct } from '@models/product'
 import React from 'react'
 import css from './styles.module.css'

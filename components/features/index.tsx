@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Features
+|
+|  Purpose: RENDERS PRODUCT'S FEATURES ON THE PRODUCT'S PAGE
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import css from './styles.module.css'
 

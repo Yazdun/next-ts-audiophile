@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Preview
+|
+|  Purpose: RENDERS PRODUCT'S PREVIEW ON THE CATEGORIES PAGES
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import { IProduct } from '@models/product'
 import Image from 'next/image'
 import React from 'react'

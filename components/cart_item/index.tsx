@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC CartItem
+|
+|  Purpose: SHOWS CART PRODUCT'S PREVIEW ON THE CART `SIDEBAR`
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import { products } from '@data/index'
 import { ICartItem } from '@models/cart'
 import Image from 'next/image'

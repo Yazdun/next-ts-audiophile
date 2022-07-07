@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC CartCheckout
+|
+|  Purpose: SHOWS PRICE AND CHECKOUT LINK ON THE CART `SIDEBAR`
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import css from './styles.module.css'
 import Link from 'next/link'
@@ -9,7 +17,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import NumberFormat from 'react-number-format'
 import { framer_money } from './framer'
 
-export const CartCheckout = () => {
+export const CartCheckout: React.FC = () => {
   const { cart } = useCart()
 
   const prices = cart?.map((cartItem: ICartItem) => {

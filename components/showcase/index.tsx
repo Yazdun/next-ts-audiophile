@@ -1,3 +1,12 @@
+/*-------------------------------------------------------------------
+|  React FC Showcase
+|
+|  Purpose: RENDERS THE PRODUCT'S SHOWCASE IN THE `PRODUCT` COMPONENT
+|           WHICH CONTAINS CALL TO ACTIONS AND PRODUCT'S MAIN INFO
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import { IProduct } from '@models/product'
 import React from 'react'
 import css from './styles.module.css'

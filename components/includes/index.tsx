@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Includes
+|
+|  Purpose: RENDERS ITEMS IN THE PRODUCT'S BOX ON THE PRODUCT'S PAGE
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import { IIncludes } from '@models/includes'
 import css from './styles.module.css'

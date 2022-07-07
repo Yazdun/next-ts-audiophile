@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Quantity
+|
+|  Purpose: INCREASE AND DECREASE THE AMOUNT OF A CART'S ITEM
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import { useCart } from '@context/index'
 import { useIsMounted } from '@hooks/useIsMounted'
 import { ICartItem } from '@models/cart'
