@@ -1,0 +1,32 @@
+.link {
+  background-color: var(--clr-primary-1);
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: var(--p1);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+.link svg {
+  font-size: 1.3rem;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--p1);
+}
+
+.total {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--clr-light-4);
+}
+
+.money {
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}

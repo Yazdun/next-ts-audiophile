@@ -49,22 +49,6 @@
   display: flex;
 }
 
-.link {
-  background-color: var(--clr-primary-1);
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: var(--p1);
-  text-transform: uppercase;
-  font-weight: bold;
-  color: white;
-  letter-spacing: 0.1rem;
-}
-
-.link svg {
-  font-size: 1.3rem;
-}
-
 .list {
   padding: var(--p1);
   display: flex;

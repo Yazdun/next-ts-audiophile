@@ -18,6 +18,7 @@
 
 .name {
   font-weight: 900;
+  transition: 0.3s color;
 }
 
 .price {
@@ -29,4 +30,8 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.name:hover {
+  color: var(--clr-primary-1);
 }
