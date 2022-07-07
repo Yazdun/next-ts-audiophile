@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import css from './styles.module.css'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { framer_background, framer_sidebar } from './framer'
 import { useOnClickOutside } from 'usehooks-ts'
 import { VscChromeClose } from 'react-icons/vsc'
@@ -32,11 +32,11 @@ export const Sidebar: React.FC<IProps> = ({ fn }) => {
             <VscChromeClose />
           </button>
         </div>
-        <ul className={css.list}>
+        <motion.ul className={css.list} layout>
           {cart.map((item: ICartItem) => {
-            return <CartItem item={item} />
+            return <CartItem item={item} key={item.id} />
           })}
-        </ul>
+        </motion.ul>
         <Link href="/checkout">
           <a className={css.link}>
             <TiShoppingCart />

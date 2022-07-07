@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import css from './styles.module.css'
 import { Quantity } from '@components/index'
-import { IProduct } from '@models/product'
+import { motion } from 'framer-motion'
 
 interface IProps {
   item: ICartItem
@@ -18,7 +18,7 @@ export const CartItem: React.FC<IProps> = ({ item }) => {
   }
 
   return (
-    <li>
+    <motion.li layout>
       <div className={css.item}>
         <div className={css.info}>
           <div className={css.image}>
@@ -35,6 +35,6 @@ export const CartItem: React.FC<IProps> = ({ item }) => {
         </div>
         <Quantity product={product} transparent maxwidth={100} />
       </div>
-    </li>
+    </motion.li>
   )
 }
