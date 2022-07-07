@@ -121,3 +121,14 @@ button:focus-visible {
     scroll-behavior: auto !important;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(192, 192, 192);
+  }
+}

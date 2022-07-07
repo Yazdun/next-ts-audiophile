@@ -23,15 +23,6 @@
   overflow-y: scroll;
 }
 
-.sidebar::-webkit-scrollbar {
-  width: 4px;
-  background: transparent;
-}
-
-.sidebar::-webkit-scrollbar-thumb {
-  background: rgb(192, 192, 192);
-}
-
 .header {
   display: flex;
   justify-content: space-between;

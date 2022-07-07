@@ -1,6 +1,6 @@
 export const framer_money = {
-  initial: { opacity: 0, y: '100%' },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: '100%' },
-  transition: { duration: 0.3 },
+  initial: { opacity: 0, x: '10%' },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: '-10%' },
+  transition: { duration: 0.2 },
 }
