@@ -4,6 +4,7 @@
   padding: 2rem;
   border-radius: 2rem;
   position: relative;
+  background-color: var(--clr-light-3);
 }
 
 .icon {

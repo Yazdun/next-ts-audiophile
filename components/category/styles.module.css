@@ -11,6 +11,7 @@
   align-items: center;
   padding: 2.25rem;
   transition: 0.3s;
+  background-color: var(--clr-light-3);
 }
 
 .image {

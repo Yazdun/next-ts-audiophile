@@ -112,7 +112,7 @@
   .slice {
     position: absolute;
     display: block;
-    background-color: var(--clr-light-1);
+    background-color: var(--clr-light-3);
 
     z-index: -1;
     width: 100%;
