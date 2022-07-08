@@ -23,26 +23,28 @@ export const Form: React.FC = () => {
         onSubmit={methods.handleSubmit(data => console.log(data))}
         className={css.form}
       >
-        <h2 className={css.title}>billing details</h2>
-        <div className={css.section}>
-          <Input {...name_validation} />
-          <Input {...email_validation} />
-          <Input {...phone_validation} />
-        </div>
-        <h2 className={css.title}>shipping info</h2>
-        <div className={css.section}>
-          <div className={css.address}>
-            <Input {...address_validation} />
+        <h1 style={{ marginTop: '3rem' }}>CHECKOUT</h1>
+        <div className={css.card}>
+          <h2 className={css.title}>billing details</h2>
+          <div className={css.section}>
+            <Input {...name_validation} />
+            <Input {...email_validation} />
+            <Input {...phone_validation} />
           </div>
-          <Input {...zip_validation} />
-          <Input {...city_validation} />
-          <Input {...country_validation} />
+        </div>
+
+        <div className={css.card}>
+          <h2 className={css.title}>shipping info</h2>
+          <div className={css.section}>
+            <div className={css.address}>
+              <Input {...address_validation} />
+            </div>
+            <Input {...zip_validation} />
+            <Input {...city_validation} />
+            <Input {...country_validation} />
+          </div>
         </div>
       </form>
     </FormProvider>
   )
-}
-
-{
-  /* <Button dark>submit</Button> */
 }

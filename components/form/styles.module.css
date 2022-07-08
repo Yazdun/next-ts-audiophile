@@ -2,7 +2,9 @@
   width: 100%;
   max-width: var(--max-width-1);
   margin: auto;
-  padding: var(--p1);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .title {
@@ -19,6 +21,12 @@
   margin: 1.5rem 0;
 }
 
+.card {
+  background-color: var(--clr-light-2);
+  padding: var(--p1);
+  box-shadow: var(--bs-3);
+}
+
 @media only screen and (min-width: 768px) {
   .section {
     grid-template-columns: 1fr 1fr;
@@ -26,5 +34,15 @@
 
   .address {
     grid-column: 1 / 3;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (min-width: 1105px) {
+  .card {
+    border-radius: var(--border-radius-1);
   }
 }
