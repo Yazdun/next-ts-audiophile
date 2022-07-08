@@ -1,7 +1,3 @@
-.container {
-  max-width: 20rem;
-}
-
 .head {
   display: flex;
   justify-content: space-between;
