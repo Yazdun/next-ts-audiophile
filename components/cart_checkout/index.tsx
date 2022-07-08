@@ -16,6 +16,7 @@ import { products } from '@data/index'
 import { AnimatePresence, motion } from 'framer-motion'
 import NumberFormat from 'react-number-format'
 import { framer_money } from './framer'
+import cn from 'classnames'
 
 export const CartCheckout: React.FC = () => {
   const { cart } = useCart()
@@ -53,9 +54,12 @@ export const CartCheckout: React.FC = () => {
 }
 
 const CheckoutLink: React.FC = () => {
+  const { cart } = useCart()
+  const emptyCart = !cart || cart.length < 1
+
   return (
     <Link href="/checkout">
-      <a className={css.link}>
+      <a className={cn(css.link, emptyCart && css.disabled)}>
         <TiShoppingCart />
         checkout
       </a>

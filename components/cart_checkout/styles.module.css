@@ -8,6 +8,7 @@
   font-weight: bold;
   color: white;
   letter-spacing: 0.1rem;
+  transition: 0.3s background;
 }
 
 .link svg {
@@ -17,7 +18,7 @@
 .price {
   display: flex;
   justify-content: space-between;
-  padding: var(--p1);
+  margin-bottom: 1rem;
 }
 
 .total {
@@ -29,4 +30,19 @@
 .money {
   font-weight: 900;
   letter-spacing: 0.1rem;
+}
+
+.checkout {
+  padding: var(--p1);
+  box-shadow: var(--bs-1);
+  background-color: var(--clr-light-2);
+}
+
+.link:hover {
+  background-color: var(--clr-primary-2);
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }

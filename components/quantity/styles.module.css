@@ -21,7 +21,7 @@
 }
 
 .transparent {
-  background-color: var(--clr-light-2);
+  background-color: transparent;
   display: flex;
   justify-content: flex-end;
   gap: 1rem;

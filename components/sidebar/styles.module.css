@@ -21,6 +21,7 @@
   flex-direction: column;
   justify-content: space-between;
   overflow-y: scroll;
+  background-color: var(--clr-light-1);
 }
 
 .header {
@@ -28,6 +29,8 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--p1);
+  box-shadow: var(--bs-1);
+  background-color: var(--clr-light-2);
 }
 
 .header h3 {
