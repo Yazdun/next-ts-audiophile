@@ -33,7 +33,7 @@ export const CartPreview: React.FC = () => {
         {cart?.map((item: any) => {
           const product = products.find(p => p.id === item.id)
           return (
-            <li className={css.item}>
+            <li className={css.item} key={item.id}>
               <div className={css.info}>
                 {product && (
                   <div className={css.image}>
