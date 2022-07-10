@@ -1,4 +1,7 @@
 .error {
-  color: var(--clr-danger-1);
+  background-color: var(--clr-danger-1);
+  color: white;
+  padding: 0 0.3rem;
+  border-radius: 0.2rem;
   font-weight: 600;
 }

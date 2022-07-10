@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 import {
   address_validation,
   city_validation,
@@ -11,18 +12,16 @@ import {
   zip_validation,
 } from '@utils/input_validators'
 import { useForm, FormProvider } from 'react-hook-form'
-import { Input, Button } from '@components/index'
+import { Input, Payment, Button } from '@components/index'
 import css from './styles.module.css'
 
 export const Form: React.FC = () => {
   const methods = useForm()
+  const [EMoney, setEMoney] = useState(false)
 
   return (
     <FormProvider {...methods}>
-      <form
-        onSubmit={methods.handleSubmit(data => console.log(data))}
-        className={css.form}
-      >
+      <form className={css.form} onSubmit={e => e.preventDefault()}>
         <h1 style={{ marginTop: '3rem' }}>CHECKOUT</h1>
         <div className={css.card}>
           <h2 className={css.title}>billing details</h2>
@@ -44,6 +43,23 @@ export const Form: React.FC = () => {
             <Input {...country_validation} />
           </div>
         </div>
+
+        <motion.div className={css.card} layout>
+          <Payment EMoney={EMoney} setEMoney={setEMoney} />
+          {EMoney && (
+            <motion.div layout className={css.section}>
+              <Input {...money_validation} />
+              <Input {...pin_validation} />
+            </motion.div>
+          )}
+
+          <Button
+            dark
+            onClick={methods.handleSubmit(data => console.log(data))}
+          >
+            continue and pay
+          </Button>
+        </motion.div>
       </form>
     </FormProvider>
   )

@@ -127,7 +127,7 @@ export const city_validation = {
 
 export const country_validation = {
   name: 'country',
-  label: 'country',
+  label: 'Country',
   type: 'text',
   id: 'country',
   placeholder: 'United States',

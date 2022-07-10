@@ -81,8 +81,8 @@
   }
 
   .dark:hover {
-    background-color: #351401;
-    border: 2px solid #351401;
+    background-color: #1d1d1d;
+    border: 2px solid #1d1d1d;
   }
 
   .transparent:hover .icon {
