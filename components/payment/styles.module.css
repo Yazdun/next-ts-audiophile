@@ -9,8 +9,8 @@
   font-weight: bold;
   width: 100%;
   transition: 0.3s background;
-  border: 1px solid var(--clr-light-5);
-  color: rgb(173, 188, 201);
+  border: 1px solid #ccdbe9;
+  color: #adbcc9;
 }
 
 .cta svg {

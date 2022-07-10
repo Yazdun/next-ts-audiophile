@@ -12,7 +12,7 @@ import {
   zip_validation,
 } from '@utils/input_validators'
 import { useForm, FormProvider } from 'react-hook-form'
-import { Input, Payment, Button } from '@components/index'
+import { CartPreview, Input, Payment, Button } from '@components/index'
 import css from './styles.module.css'
 
 export const Form: React.FC = () => {
@@ -20,47 +20,50 @@ export const Form: React.FC = () => {
   const [EMoney, setEMoney] = useState(false)
 
   return (
-    <FormProvider {...methods}>
-      <form className={css.form} onSubmit={e => e.preventDefault()}>
-        <h1 style={{ marginTop: '3rem' }}>CHECKOUT</h1>
-        <div className={css.card}>
-          <h2 className={css.title}>billing details</h2>
-          <div className={css.section}>
-            <Input {...name_validation} />
-            <Input {...email_validation} />
-            <Input {...phone_validation} />
-          </div>
-        </div>
+    <div className={css.container}>
+      <CartPreview />
 
-        <div className={css.card}>
-          <h2 className={css.title}>shipping info</h2>
-          <div className={css.section}>
-            <div className={css.address}>
-              <Input {...address_validation} />
+      <FormProvider {...methods}>
+        <form className={css.form} onSubmit={e => e.preventDefault()}>
+          <div className={css.card}>
+            <h2 className={css.title}>billing details</h2>
+            <div className={css.section}>
+              <Input {...name_validation} />
+              <Input {...email_validation} />
+              <Input {...phone_validation} />
             </div>
-            <Input {...zip_validation} />
-            <Input {...city_validation} />
-            <Input {...country_validation} />
           </div>
-        </div>
 
-        <motion.div className={css.card} layout>
-          <Payment EMoney={EMoney} setEMoney={setEMoney} />
-          {EMoney && (
-            <motion.div layout className={css.section}>
-              <Input {...money_validation} />
-              <Input {...pin_validation} />
-            </motion.div>
-          )}
+          <div className={css.card}>
+            <h2 className={css.title}>shipping info</h2>
+            <div className={css.section}>
+              <div className={css.address}>
+                <Input {...address_validation} />
+              </div>
+              <Input {...zip_validation} />
+              <Input {...city_validation} />
+              <Input {...country_validation} />
+            </div>
+          </div>
 
-          <Button
-            dark
-            onClick={methods.handleSubmit(data => console.log(data))}
-          >
-            continue and pay
-          </Button>
-        </motion.div>
-      </form>
-    </FormProvider>
+          <motion.div className={css.card} layout>
+            <Payment EMoney={EMoney} setEMoney={setEMoney} />
+            {EMoney && (
+              <motion.div layout className={css.section}>
+                <Input {...money_validation} />
+                <Input {...pin_validation} />
+              </motion.div>
+            )}
+
+            <Button
+              dark
+              onClick={methods.handleSubmit(data => console.log(data))}
+            >
+              continue and pay
+            </Button>
+          </motion.div>
+        </form>
+      </FormProvider>
+    </div>
   )
 }
