@@ -10,8 +10,7 @@
   width: 100%;
   transition: 0.3s background, 0.3s border;
   border: 1px solid var(--clr-light-5);
-  background-color: var(--clr-light-5);
-  color: white;
+  color: var(--clr-light-5);
 }
 
 .cta svg {
@@ -23,10 +22,6 @@
   gap: 1rem;
 }
 
-.container {
-  margin-bottom: 3rem;
-}
-
 .title {
   font-weight: 600;
   margin-bottom: 1rem;
@@ -34,8 +29,8 @@
 
 .active {
   pointer-events: none;
-  border: 1px solid var(--clr-dark-1);
-  background-color: var(--clr-dark-1);
+  border: 1px solid var(--clr-primary-1);
+  background-color: var(--clr-primary-1);
   color: white;
   opacity: 1;
 }

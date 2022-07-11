@@ -37,6 +37,29 @@
   margin: 1.5rem 0;
 }
 
+.btn {
+  display: flex;
+  background-color: var(--clr-dark-1);
+  align-items: center;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: auto;
+  margin-top: 2rem;
+  gap: 0.5rem;
+  color: white;
+  letter-spacing: 0.1rem;
+  transition: 0.3s opacity;
+}
+
+.btn svg {
+  font-size: 1.5rem;
+}
+
+.btn:disabled {
+  opacity: 0.1;
+}
+
 @media only screen and (min-width: 768px) {
   .section {
     grid-template-columns: 1fr 1fr;

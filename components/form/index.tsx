@@ -12,12 +12,15 @@ import {
   zip_validation,
 } from '@utils/input_validators'
 import { useForm, FormProvider } from 'react-hook-form'
-import { CartPreview, Input, Payment, Button } from '@components/index'
+import { CartPreview, Input, Payment } from '@components/index'
+import { FiCheck } from 'react-icons/fi'
 import css from './styles.module.css'
 
 export const Form: React.FC = () => {
   const methods = useForm()
   const [EMoney, setEMoney] = useState(false)
+
+  console.log(methods.formState.errors)
 
   return (
     <div className={css.container}>
@@ -55,12 +58,18 @@ export const Form: React.FC = () => {
               </motion.div>
             )}
 
-            <Button
-              dark
+            <button
               onClick={methods.handleSubmit(data => console.log(data))}
+              className={css.btn}
+              disabled={
+                Object.keys(methods.formState.errors).length === 0
+                  ? false
+                  : true
+              }
             >
+              <FiCheck />
               continue and pay
-            </Button>
+            </button>
           </motion.div>
         </form>
       </FormProvider>
