@@ -15,6 +15,7 @@ import { useForm, FormProvider } from 'react-hook-form'
 import { CartPreview, Input, Payment } from '@components/index'
 import { FiCheck } from 'react-icons/fi'
 import css from './styles.module.css'
+import { useCart } from '@context/index'
 
 interface IProps {
   setSuccess: any
@@ -23,6 +24,7 @@ interface IProps {
 export const Form: React.FC<IProps> = ({ setSuccess }) => {
   const methods = useForm()
   const [EMoney, setEMoney] = useState(false)
+  const { clearCart } = useCart()
 
   return (
     <div className={css.container}>
@@ -61,7 +63,10 @@ export const Form: React.FC<IProps> = ({ setSuccess }) => {
 
             <motion.button
               layout
-              onClick={methods.handleSubmit(data => setSuccess(data))}
+              onClick={methods.handleSubmit(data => {
+                setSuccess(data)
+                clearCart()
+              })}
               className={css.btn}
               disabled={
                 Object.keys(methods.formState.errors).length === 0

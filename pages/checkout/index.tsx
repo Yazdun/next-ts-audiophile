@@ -20,7 +20,7 @@ const CheckoutPage: NextPage = props => {
     }
   }, [])
 
-  if (noCart) {
+  if (noCart && !success) {
     return (
       <>
         <main className={css.loading}>

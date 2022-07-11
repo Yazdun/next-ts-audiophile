@@ -12,6 +12,10 @@ const CartContext = createContext<any>(null)
 export const CartProvider: React.FC<IProps> = ({ children }) => {
   const [cart, setCart] = useLocalStorage<ICartItem[] | null>('cart', null)
 
+  const clearCart = () => {
+    setCart(null)
+  }
+
   const updateCart = (id: number, isDecrease?: boolean) => {
     const isExist = cart?.find((item: ICartItem) => item.id === id)
     if (!isExist) {
@@ -62,7 +66,7 @@ export const CartProvider: React.FC<IProps> = ({ children }) => {
   }, [cart])
 
   return (
-    <CartContext.Provider value={{ cart, increase, decrease }}>
+    <CartContext.Provider value={{ cart, increase, decrease, clearCart }}>
       {children}
     </CartContext.Provider>
   )
