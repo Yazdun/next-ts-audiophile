@@ -4,10 +4,33 @@
   padding: 4rem 0;
 }
 
+.loading {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--p1);
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.spinner {
+  font-size: 3rem;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
 @media only screen and (min-width: 1105px) {
   .main {
-    background-color: var(--clr-light-1);
     min-height: 100vh;
     padding: 4rem 1rem;
+  }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

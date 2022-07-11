@@ -56,7 +56,8 @@ export const Form: React.FC = () => {
               </motion.div>
             )}
 
-            <button
+            <motion.button
+              layout
               onClick={methods.handleSubmit(data => console.log(data))}
               className={css.btn}
               disabled={
@@ -67,7 +68,7 @@ export const Form: React.FC = () => {
             >
               <FiCheck />
               continue and pay
-            </button>
+            </motion.button>
           </motion.div>
         </form>
       </FormProvider>
