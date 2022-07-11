@@ -1,7 +1,8 @@
 .main {
   background-color: var(--clr-light-1);
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 2rem 0;
+  padding-bottom: 6rem;
 }
 
 .loading {
@@ -19,10 +20,47 @@
   animation: lds-dual-ring 1.2s linear infinite;
 }
 
+.back {
+  width: 100%;
+  max-width: var(--max-width-1);
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: var(--p1);
+}
+
+.back button {
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  font-weight: bold;
+  background-color: var(--clr-light-2);
+  padding: 1rem;
+  border-radius: var(--border-radius-1);
+  box-shadow: var(--bs-3);
+  font-size: 0.9rem;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back button svg {
+  font-size: 1.1rem;
+}
+
+.back button:hover {
+  box-shadow: var(--bs-2);
+}
+
 @media only screen and (min-width: 1105px) {
   .main {
     min-height: 100vh;
-    padding: 4rem 1rem;
+    padding-block: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+  }
+
+  .back {
+    padding: 0;
   }
 }
 

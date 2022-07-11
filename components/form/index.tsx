@@ -23,7 +23,6 @@ export const Form: React.FC = () => {
   return (
     <div className={css.container}>
       <CartPreview />
-
       <FormProvider {...methods}>
         <form className={css.form} onSubmit={e => e.preventDefault()}>
           <div className={css.card}>

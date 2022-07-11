@@ -5,7 +5,7 @@ import css from './styles.module.css'
 import { ImSpinner2 } from 'react-icons/im'
 import Router from 'next/router'
 import { useEffect, useState } from 'react'
-import { useIsMounted } from '@hooks/useIsMounted'
+import { BiArrowBack } from 'react-icons/bi'
 
 const CheckoutPage: NextPage = props => {
   const { cart } = useCart()
@@ -32,6 +32,12 @@ const CheckoutPage: NextPage = props => {
     <>
       <SEO title="Checkout" />
       <main className={css.main}>
+        <div className={css.back}>
+          <button onClick={() => Router.back()}>
+            <BiArrowBack />
+            back to the shop
+          </button>
+        </div>
         <Form />
       </main>
     </>
