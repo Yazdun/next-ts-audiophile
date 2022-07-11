@@ -16,7 +16,7 @@ export const name_validation = {
       message: 'Required',
     },
     pattern: {
-      value: /^[a-zA-Z0-9_.-]*$/,
+      value: /^[a-zA-Z\s]*$/,
       message: 'Wrong format',
     },
     maxLength: {
