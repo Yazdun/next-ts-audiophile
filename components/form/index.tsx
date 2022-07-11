@@ -20,8 +20,6 @@ export const Form: React.FC = () => {
   const methods = useForm()
   const [EMoney, setEMoney] = useState(false)
 
-  console.log(methods.formState.errors)
-
   return (
     <div className={css.container}>
       <CartPreview />
