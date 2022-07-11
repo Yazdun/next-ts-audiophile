@@ -29,11 +29,13 @@
 
 .name {
   font-weight: 900;
+  font-size: 0.9rem;
 }
 
 .price {
   color: var(--clr-light-5);
   font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .info {
@@ -71,6 +73,14 @@
 
 .is_total {
   margin-top: 2rem;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.13rem;
+  font-size: 1rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 1105px) {

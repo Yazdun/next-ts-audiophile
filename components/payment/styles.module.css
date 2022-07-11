@@ -8,9 +8,10 @@
   gap: 1rem;
   font-weight: bold;
   width: 100%;
-  transition: 0.3s background;
-  border: 1px solid #ccdbe9;
-  color: #adbcc9;
+  transition: 0.3s background, 0.3s border;
+  border: 1px solid var(--clr-light-5);
+  background-color: var(--clr-light-5);
+  color: white;
 }
 
 .cta svg {
@@ -33,8 +34,8 @@
 
 .active {
   pointer-events: none;
-  border: 1px solid var(--clr-primary-1);
-  background-color: var(--clr-primary-1);
+  border: 1px solid var(--clr-dark-1);
+  background-color: var(--clr-dark-1);
   color: white;
   opacity: 1;
 }

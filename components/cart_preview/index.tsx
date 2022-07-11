@@ -29,6 +29,7 @@ export const CartPreview: React.FC = () => {
 
   return (
     <div className={css.container}>
+      <h2 className={css.title}>summary</h2>
       <ul className={css.products}>
         {cart?.map((item: any) => {
           const product = products.find(p => p.id === item.id)
