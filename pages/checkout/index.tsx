@@ -6,7 +6,6 @@ import { ImSpinner2 } from 'react-icons/im'
 import Router from 'next/router'
 import { useEffect, useState } from 'react'
 import { BiArrowBack } from 'react-icons/bi'
-import { AnimatePresence } from 'framer-motion'
 import cn from 'classnames'
 
 const CheckoutPage: NextPage = props => {
@@ -34,16 +33,14 @@ const CheckoutPage: NextPage = props => {
     <>
       <SEO title="Checkout" />
       <main className={cn(success ? css.success : css.main)}>
-        <AnimatePresence initial={false} exitBeforeEnter>
-          {success ? (
-            <Success data={success} />
-          ) : (
-            <>
-              <Back />
-              <Form setSuccess={setSuccess} />
-            </>
-          )}
-        </AnimatePresence>
+        {success ? (
+          <Success data={success} />
+        ) : (
+          <div className={css.forms}>
+            <Back />
+            <Form setSuccess={setSuccess} />
+          </div>
+        )}
       </main>
     </>
   )
