@@ -16,7 +16,11 @@ import { CartPreview, Input, Payment } from '@components/index'
 import { FiCheck } from 'react-icons/fi'
 import css from './styles.module.css'
 
-export const Form: React.FC = () => {
+interface IProps {
+  setSuccess: any
+}
+
+export const Form: React.FC<IProps> = ({ setSuccess }) => {
   const methods = useForm()
   const [EMoney, setEMoney] = useState(false)
 
@@ -57,7 +61,7 @@ export const Form: React.FC = () => {
 
             <motion.button
               layout
-              onClick={methods.handleSubmit(data => console.log(data))}
+              onClick={methods.handleSubmit(data => setSuccess(data))}
               className={css.btn}
               disabled={
                 Object.keys(methods.formState.errors).length === 0
