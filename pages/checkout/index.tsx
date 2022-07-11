@@ -7,6 +7,7 @@ import Router from 'next/router'
 import { useEffect, useState } from 'react'
 import { BiArrowBack } from 'react-icons/bi'
 import { AnimatePresence } from 'framer-motion'
+import cn from 'classnames'
 
 const CheckoutPage: NextPage = props => {
   const { cart } = useCart()
@@ -32,14 +33,15 @@ const CheckoutPage: NextPage = props => {
   return (
     <>
       <SEO title="Checkout" />
-      <main className={css.main}>
-        <Back />
-
+      <main className={cn(success ? css.success : css.main)}>
         <AnimatePresence initial={false} exitBeforeEnter>
           {success ? (
             <Success data={success} />
           ) : (
-            <Form setSuccess={setSuccess} />
+            <>
+              <Back />
+              <Form setSuccess={setSuccess} />
+            </>
           )}
         </AnimatePresence>
       </main>

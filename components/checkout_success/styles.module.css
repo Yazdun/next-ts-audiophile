@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  max-width: 40rem;
+  margin: auto;
+  padding: var(--p1);
+  text-align: center;
+  box-shadow: var(--bs-3);
+  background-color: var(--clr-light-3);
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.info {
+  line-height: 2rem;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 30rem;
+  font-weight: 500;
+}
+
+.info strong {
+  font-weight: 900;
+}
+
+.cta {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--clr-primary-1);
+  letter-spacing: 0.08rem;
+  padding: 1rem;
+  transition: 0.3s background;
+}
+
+.cta:hover {
+  background-color: var(--clr-light-1);
+  padding: 1rem;
+  border-radius: var(--border-radius-1);
+}
+
+@media only screen and (min-width: 641px) {
+  .container {
+    border-radius: var(--border-radius-1);
+  }
+}
