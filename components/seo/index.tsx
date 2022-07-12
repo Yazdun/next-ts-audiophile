@@ -28,7 +28,7 @@ export const SEO: React.FC<IProps> = ({ title = '', desc = '' }) => {
         locale: 'en_us',
         images: [
           {
-            url: 'https://res.cloudinary.com/dakts9ect/image/upload/v1657599195/sideprojects/Untitled-1_xa6ril.jpg',
+            url: 'https://res.cloudinary.com/dakts9ect/image/upload/v1657600692/sideprojects/Untitled-1_ym5obf.jpg',
             width: 1200,
             height: 630,
             alt: title,
