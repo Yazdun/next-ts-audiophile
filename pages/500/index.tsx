@@ -8,17 +8,17 @@ interface IProps {
   title: string
 }
 
-const NotFound: NextPage<IProps> = () => {
+const ServerError: NextPage<IProps> = () => {
   return (
     <>
-      <SEO title="404" desc="Oops ! Not found" />
+      <SEO title="500" desc="Oops ! Server error, our fault" />
       <Layout>
         <header className={css.header}>
-          <h1>Not found</h1>
-          <p>This page does not exist or has been deleted </p>
+          <h1>500 | Server Error</h1>
+          <p>Our fault ! we are looking into it</p>
         </header>
       </Layout>
     </>
   )
 }
-export default NotFound
+export default ServerError
