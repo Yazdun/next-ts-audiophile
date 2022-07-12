@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Form
+|
+|  Purpose: RENDERS CHECKOUT FORM
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import {

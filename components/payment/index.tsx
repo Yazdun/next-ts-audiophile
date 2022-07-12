@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Payment
+|
+|  Purpose: PAYMENT BUTTONS ON THE `FORM`
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import css from './styles.module.css'
 import { FaMoneyCheck, FaMoneyBillAlt } from 'react-icons/fa'

@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC Success
+|
+|  Purpose: RENDERS SUCCESS MESSAGE AFTER SUBMITING CHECKOUT FORM
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import Link from 'next/link'
 import React from 'react'
 import css from './styles.module.css'

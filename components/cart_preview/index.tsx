@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  React FC CartPreview
+|
+|  Purpose: SHOWS CART PREVIEW ON THE 'FORM'
+|
+|  Returns:  TSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import { ICartItem } from '@models/cart'
 import { useCart } from '@context/index'
