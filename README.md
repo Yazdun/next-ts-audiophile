@@ -12,7 +12,7 @@
   <p align="center">
     e-commerce website
     <br />
-    <a href=""><strong>View on frontend mentor »</strong></a>
+    <a href="https://www.frontendmentor.io/solutions/audiophile-solution-built-with-next-typescript-vdZ3KrOLk9"><strong>View on frontend mentor »</strong></a>
     <br />
     <br />
     <a href="https://audioophile.vercel.app/">View Demo</a>
