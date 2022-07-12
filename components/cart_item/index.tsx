@@ -40,7 +40,7 @@ export const CartItem: React.FC<IProps> = ({ item }) => {
             />
           </div>
           <div className={css.text}>
-            <Link href={product.slug}>
+            <Link href={`/product/${product.slug}`}>
               <a className={css.name}>{product.shortName}</a>
             </Link>
             <p className={css.price}>
