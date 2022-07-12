@@ -48,7 +48,7 @@ export const email_validation = {
 export const phone_validation = {
   name: 'phone',
   label: 'Phone Number',
-  type: 'text',
+  type: 'number',
   id: 'phone',
   placeholder: '202-555-0136',
   validation: {
