@@ -57,6 +57,7 @@ export const Hamburger: React.FC = () => {
                         isSubCategory && css.active,
                         router.pathname === '/' && slug === '/' && css.active,
                       )}
+                      onClick={() => setOpen(false)}
                     >
                       {title}
                       <Icon className={css.icon} />
