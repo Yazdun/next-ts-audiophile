@@ -23,7 +23,9 @@ export const Payment: React.FC<IProps> = ({ EMoney, setEMoney }) => {
         </button>
         <button
           className={cn(css.cta, !EMoney && css.active)}
-          onClick={() => setEMoney(false)}
+          onClick={() => {
+            setEMoney(false)
+          }}
         >
           <FaMoneyBillAlt />
           Cash on Delivery

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import {
   address_validation,
@@ -25,6 +25,13 @@ export const Form: React.FC<IProps> = ({ setSuccess }) => {
   const methods = useForm()
   const [EMoney, setEMoney] = useState(false)
   const { clearCart } = useCart()
+
+  useEffect(() => {
+    if (!EMoney) {
+      methods.unregister('pin')
+      methods.unregister('money')
+    }
+  }, [EMoney])
 
   return (
     <div className={css.container}>
