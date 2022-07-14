@@ -18,4 +18,5 @@
 .header p {
   margin-top: 1rem;
   color: var(--clr-light-5);
+  text-align: center;
 }
