@@ -16,7 +16,7 @@ export const BannerZX9: React.FC = () => {
   return (
     <div className={css.banner}>
       <div className={css.img}>
-        <Image src={zx9_image} alt="ZX9 Speaker" />
+        <Image src={zx9_image} alt="ZX9 Speaker" placeholder="blur"/>
       </div>
       <div className={css.body}>
         <h1 className={css.title}>
