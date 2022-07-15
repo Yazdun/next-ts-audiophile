@@ -22,7 +22,7 @@ export const SEO: React.FC<IProps> = ({ title = '', desc = '' }) => {
       description={desc ? desc : DEFAULT_DESC_META_TAG}
       additionalLinkTags={[{ rel: 'icon', href: '/favicon.ico' }]}
       openGraph={{
-        url: `https://https://femgalleria.vercel.app`,
+        url: `https://audioophile.vercel.app`,
         title: title,
         description: desc,
         locale: 'en_us',
