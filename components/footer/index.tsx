@@ -94,7 +94,7 @@ const socials = [
   },
   {
     title: 'twitter',
-    href: 'https://twitter.com/Yazdun',
+    href: 'https://twitter.com',
     icon: <SiTwitter />,
   },
   {
